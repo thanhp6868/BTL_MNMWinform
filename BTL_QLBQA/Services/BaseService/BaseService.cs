@@ -5,6 +5,7 @@ using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BTL_QLBQA.Services.BaseService
 {
@@ -21,14 +22,19 @@ namespace BTL_QLBQA.Services.BaseService
         }
         public bool Delete(int Id)
         {
-            T entity = GetByID(Id);
-            if(entity != null)
+            DialogResult res = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
             {
-                return false;
+                var entity = dbContext.Set<T>().Find(Id);
+                dbContext.Set<T>().Remove(entity);
+                dbContext.SaveChanges();
+                return true;
             }
-            dbContext.Set<T>().Remove(entity);
-            dbContext.SaveChanges();
-            return true;
+            else 
+            {                 
+                return false;
+                       
+            }
         }
 
         public DbSet<T> GetAll()

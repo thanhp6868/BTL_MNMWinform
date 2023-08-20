@@ -50,17 +50,11 @@ namespace BTL_QLBQA.User_control
             this.label4 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dtgv_Diem = new System.Windows.Forms.DataGridView();
-            this.cMaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cLoaiSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSuppiler = new System.Windows.Forms.DataGridView();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Diem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSuppiler)).BeginInit();
             this.SuspendLayout();
             // 
             // txtGhiChu
@@ -300,69 +294,18 @@ namespace BTL_QLBQA.User_control
             this.groupBox2.TabIndex = 66;
             this.groupBox2.TabStop = false;
             // 
-            // dtgv_Diem
+            // dgvSuppiler
             // 
-            this.dtgv_Diem.AllowUserToAddRows = false;
-            this.dtgv_Diem.AllowUserToDeleteRows = false;
-            this.dtgv_Diem.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dtgv_Diem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_Diem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cMaNCC,
-            this.cTenNCC,
-            this.cLoaiSP,
-            this.cDiaChi,
-            this.cSDT,
-            this.GhiChu});
-            this.dtgv_Diem.Location = new System.Drawing.Point(1, 56);
-            this.dtgv_Diem.Name = "dtgv_Diem";
-            this.dtgv_Diem.ReadOnly = true;
-            this.dtgv_Diem.RowHeadersVisible = false;
-            this.dtgv_Diem.Size = new System.Drawing.Size(679, 554);
-            this.dtgv_Diem.TabIndex = 64;
-            // 
-            // cMaNCC
-            // 
-            this.cMaNCC.DataPropertyName = "MaNCC";
-            this.cMaNCC.HeaderText = "Mã nhà cung cấp";
-            this.cMaNCC.Name = "cMaNCC";
-            this.cMaNCC.ReadOnly = true;
-            // 
-            // cTenNCC
-            // 
-            this.cTenNCC.DataPropertyName = "TenNCC";
-            this.cTenNCC.HeaderText = "Tên nhà cung cấp";
-            this.cTenNCC.Name = "cTenNCC";
-            this.cTenNCC.ReadOnly = true;
-            this.cTenNCC.Width = 120;
-            // 
-            // cLoaiSP
-            // 
-            this.cLoaiSP.DataPropertyName = "LoaiSP";
-            this.cLoaiSP.HeaderText = "Loại sản phẩm";
-            this.cLoaiSP.Name = "cLoaiSP";
-            this.cLoaiSP.ReadOnly = true;
-            // 
-            // cDiaChi
-            // 
-            this.cDiaChi.DataPropertyName = "DiaChi";
-            this.cDiaChi.HeaderText = "Địa chỉ";
-            this.cDiaChi.Name = "cDiaChi";
-            this.cDiaChi.ReadOnly = true;
-            this.cDiaChi.Width = 130;
-            // 
-            // cSDT
-            // 
-            this.cSDT.DataPropertyName = "SDT";
-            this.cSDT.HeaderText = "SĐT";
-            this.cSDT.Name = "cSDT";
-            this.cSDT.ReadOnly = true;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
+            this.dgvSuppiler.AllowUserToAddRows = false;
+            this.dgvSuppiler.AllowUserToDeleteRows = false;
+            this.dgvSuppiler.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvSuppiler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSuppiler.Location = new System.Drawing.Point(1, 56);
+            this.dgvSuppiler.Name = "dgvSuppiler";
+            this.dgvSuppiler.ReadOnly = true;
+            this.dgvSuppiler.RowHeadersVisible = false;
+            this.dgvSuppiler.Size = new System.Drawing.Size(679, 554);
+            this.dgvSuppiler.TabIndex = 64;
             // 
             // txt_timkiem
             // 
@@ -383,14 +326,15 @@ namespace BTL_QLBQA.User_control
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dtgv_Diem);
+            this.Controls.Add(this.dgvSuppiler);
             this.Controls.Add(this.txt_timkiem);
             this.Name = "uc_NhaCungCap";
             this.Size = new System.Drawing.Size(975, 616);
+            this.Load += new System.EventHandler(this.uc_NhaCungCap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Diem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSuppiler)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,13 +363,7 @@ namespace BTL_QLBQA.User_control
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dtgv_Diem;
+        private System.Windows.Forms.DataGridView dgvSuppiler;
         private System.Windows.Forms.TextBox txt_timkiem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cMaNCC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cTenNCC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cLoaiSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cSDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }

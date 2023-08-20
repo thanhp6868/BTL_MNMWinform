@@ -36,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -60,6 +63,9 @@
     <Compile Include="Components\StringHelper.cs" />
     <Compile Include="ConstLib\EnumOrder.cs" />
     <Compile Include="DataAccess\QLBQA_dbContext.cs" />
+    <Compile Include="Dtos\Employees\EmployeeDto.cs" />
+    <Compile Include="Dtos\Products\ProductDto.cs" />
+    <Compile Include="Dtos\Suppliers\SupplierDto.cs" />
     <Compile Include="form\Form_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,7 @@
     <Compile Include="form\Form_main_menu.Designer.cs">
       <DependentUpon>Form_main_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mapper\MapperProfile.cs" />
     <Compile Include="Migrations\202308141539172_init.cs" />
     <Compile Include="Migrations\202308141539172_init.designer.cs">
       <DependentUpon>202308141539172_init.cs</DependentUpon>

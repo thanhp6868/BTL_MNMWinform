@@ -43,13 +43,7 @@ namespace BTL_QLBQA.User_control
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgv_Diem = new System.Windows.Forms.DataGridView();
-            this.cMaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cCaLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.btn_clear = new System.Windows.Forms.Button();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,7 +53,7 @@ namespace BTL_QLBQA.User_control
             this.btn_them = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Diem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -206,69 +200,18 @@ namespace BTL_QLBQA.User_control
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã nhân viên:";
             // 
-            // dtgv_Diem
+            // dgvNhanVien
             // 
-            this.dtgv_Diem.AllowUserToAddRows = false;
-            this.dtgv_Diem.AllowUserToDeleteRows = false;
-            this.dtgv_Diem.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dtgv_Diem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_Diem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cMaNV,
-            this.cTenNV,
-            this.cDiaChi,
-            this.cSDT,
-            this.cCaLam,
-            this.GhiChu});
-            this.dtgv_Diem.Location = new System.Drawing.Point(1, 56);
-            this.dtgv_Diem.Name = "dtgv_Diem";
-            this.dtgv_Diem.ReadOnly = true;
-            this.dtgv_Diem.RowHeadersVisible = false;
-            this.dtgv_Diem.Size = new System.Drawing.Size(679, 554);
-            this.dtgv_Diem.TabIndex = 57;
-            // 
-            // cMaNV
-            // 
-            this.cMaNV.DataPropertyName = "MaNV";
-            this.cMaNV.HeaderText = "Mã nhân viên";
-            this.cMaNV.Name = "cMaNV";
-            this.cMaNV.ReadOnly = true;
-            // 
-            // cTenNV
-            // 
-            this.cTenNV.DataPropertyName = "TenNV";
-            this.cTenNV.HeaderText = "Tên nhân viên";
-            this.cTenNV.Name = "cTenNV";
-            this.cTenNV.ReadOnly = true;
-            this.cTenNV.Width = 120;
-            // 
-            // cDiaChi
-            // 
-            this.cDiaChi.DataPropertyName = "DiaChi";
-            this.cDiaChi.HeaderText = "Địa chỉ";
-            this.cDiaChi.Name = "cDiaChi";
-            this.cDiaChi.ReadOnly = true;
-            this.cDiaChi.Width = 130;
-            // 
-            // cSDT
-            // 
-            this.cSDT.DataPropertyName = "SDT";
-            this.cSDT.HeaderText = "SĐT";
-            this.cSDT.Name = "cSDT";
-            this.cSDT.ReadOnly = true;
-            // 
-            // cCaLam
-            // 
-            this.cCaLam.DataPropertyName = "CaLam";
-            this.cCaLam.HeaderText = "Ca làm";
-            this.cCaLam.Name = "cCaLam";
-            this.cCaLam.ReadOnly = true;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
+            this.dgvNhanVien.AllowUserToAddRows = false;
+            this.dgvNhanVien.AllowUserToDeleteRows = false;
+            this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Location = new System.Drawing.Point(1, 56);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.ReadOnly = true;
+            this.dgvNhanVien.RowHeadersVisible = false;
+            this.dgvNhanVien.Size = new System.Drawing.Size(679, 554);
+            this.dgvNhanVien.TabIndex = 57;
             // 
             // btn_clear
             // 
@@ -380,16 +323,17 @@ namespace BTL_QLBQA.User_control
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_timkiem);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dtgv_Diem);
+            this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.txt_timkiem);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Name = "uc_NhanVien";
             this.Size = new System.Drawing.Size(975, 616);
+            this.Load += new System.EventHandler(this.uc_NhanVien_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Diem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -410,7 +354,7 @@ namespace BTL_QLBQA.User_control
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dtgv_Diem;
+        private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.Label label8;
@@ -421,11 +365,5 @@ namespace BTL_QLBQA.User_control
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cMaNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cTenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cSDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cCaLam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }

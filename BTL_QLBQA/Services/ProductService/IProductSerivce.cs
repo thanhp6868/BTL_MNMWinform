@@ -1,4 +1,5 @@
-﻿using BTL_QLBQA.Models;
+﻿using BTL_QLBQA.Dtos.Products;
+using BTL_QLBQA.Models;
 using BTL_QLBQA.Services.BaseService;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace BTL_QLBQA.Services.ProductService
 {
-   public interface IProductSerivce : IBaseService<Product>
+    public interface IProductSerivce : IBaseService<Product>
     {
-
+       List<ProductDto> getDataSoucreDto(string nameFilter = "", int idFillter = 0);
     }
 }

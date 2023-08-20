@@ -34,10 +34,32 @@ namespace BTL_QLBQA.form
             else uc_Product.Instance.BringToFront();
             //
             btn_Lop.BackColor = Color.DeepSkyBlue;
-            btn_sinhvien.BackColor = Color.LightBlue;
-            btn_diem.BackColor = Color.LightBlue;
-            btn_dangky.BackColor = Color.LightBlue;
-            btn_hocphan.BackColor = Color.LightBlue;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!pMain.Controls.Contains(uc_NhaCungCap.Instance))
+            {
+                pMain.Controls.Add(uc_NhaCungCap.Instance);
+                uc_NhaCungCap.Instance.Dock = DockStyle.Fill;
+                uc_NhaCungCap.Instance.BringToFront();
+            }
+            else uc_Product.Instance.BringToFront();
+            //
+            button1.BackColor = Color.DeepSkyBlue;
+        }
+
+        private void btn_dangky_Click(object sender, EventArgs e)
+        {
+            if (!pMain.Controls.Contains(uc_NhanVien.Instance))
+            {
+                pMain.Controls.Add(uc_NhanVien.Instance);
+                uc_NhanVien.Instance.Dock = DockStyle.Fill;
+                uc_NhanVien.Instance.BringToFront();
+            }
+            else uc_NhanVien.Instance.BringToFront();
+            //
+            button1.BackColor = Color.DeepSkyBlue;
         }
     }
 }

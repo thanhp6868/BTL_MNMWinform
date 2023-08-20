@@ -67,3 +67,35 @@ D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.exe
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.pdb
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.something.resources
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.fix.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe.config
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\BTL_QLBQA.pdb
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\EntityFramework.dll
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\EntityFramework.xml
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.AssemblyReference.cache
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.SuggestedBindingRedirects.cache
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_BanHang.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Form_Login.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_main.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_main_menu.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.init.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumntotal.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumsomthing.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.something.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.fix.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Properties.Resources.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Donhang.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_KhachHang.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_NhaCungCap.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_NhanVien.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_PhanQuyen.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Product.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.GenerateResource.cache
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CoreCompileInputs.cache
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CopyComplete
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.exe
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.pdb
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\AutoMapper.dll
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\AutoMapper.xml
