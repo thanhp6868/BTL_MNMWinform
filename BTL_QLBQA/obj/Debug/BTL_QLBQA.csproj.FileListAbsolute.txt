@@ -1,0 +1,69 @@
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe.config
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.pdb
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.dll
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.xml
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.AssemblyReference.cache
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Properties.Resources.resources
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.GenerateResource.cache
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CoreCompileInputs.cache
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CopyComplete
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.exe
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.pdb
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.init.resources
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Form1.resources
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumntotal.resources
+C:\Users\con_g\source\repos\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumsomthing.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe.config
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.pdb
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.dll
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.dll
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.xml
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.xml
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.AssemblyReference.cache
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Form_Login.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.init.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumntotal.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumsomthing.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Properties.Resources.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.GenerateResource.cache
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CoreCompileInputs.cache
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CopyComplete
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.exe
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.pdb
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_main.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_main_menu.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Product.resources
+D:\FILE\MNM\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Donhang.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe.config
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.exe
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\BTL_QLBQA.pdb
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.dll
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.dll
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.xml
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\EntityFramework.SqlServer.xml
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.AssemblyReference.cache
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_BanHang.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Form_Login.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_main.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.form.Form_main_menu.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.init.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumntotal.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.addcolumsomthing.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Properties.Resources.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Donhang.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_KhachHang.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_NhaCungCap.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_NhanVien.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_PhanQuyen.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Product.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.GenerateResource.cache
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CoreCompileInputs.cache
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.csproj.CopyComplete
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.exe
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.pdb
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.something.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.fix.resources
