@@ -61,11 +61,20 @@
   <ItemGroup>
     <Compile Include="Components\formHelper.cs" />
     <Compile Include="Components\StringHelper.cs" />
+    <Compile Include="ConstLib\EnumContractStatus.cs" />
+    <Compile Include="ConstLib\EnumContractType.cs" />
+    <Compile Include="ConstLib\EnumEmployeeSalary.cs" />
+    <Compile Include="ConstLib\EnumExpiryContract.cs" />
     <Compile Include="ConstLib\EnumOrder.cs" />
     <Compile Include="DataAccess\QLBQA_dbContext.cs" />
+    <Compile Include="Dtos\Customer\CustomerDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeDto.cs" />
+    <Compile Include="Dtos\Employees\EmployeeSalaryDtos.cs" />
     <Compile Include="Dtos\Products\ProductDto.cs" />
+    <Compile Include="Dtos\Shifts\ShiftDto.cs" />
     <Compile Include="Dtos\Suppliers\SupplierDto.cs" />
+    <Compile Include="Dtos\WarehouseAreas\WarehouseAreaDto.cs" />
+    <Compile Include="Dtos\Warehouses\WarehouseDto.cs" />
     <Compile Include="form\Form_BanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +120,15 @@
     <Compile Include="Migrations\202308201646282_fix.designer.cs">
       <DependentUpon>202308201646282_fix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308271630343_create_any_table.cs" />
+    <Compile Include="Migrations\202308271630343_create_any_table.designer.cs">
+      <DependentUpon>202308271630343_create_any_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Contract.cs" />
     <Compile Include="Models\Coupon.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -121,10 +136,14 @@
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductCategory.cs" />
+    <Compile Include="Models\EmployeeSalary.cs" />
     <Compile Include="Models\Shift.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\Unit.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\WareHouse.cs" />
+    <Compile Include="Models\WarehouseArea.cs" />
+    <Compile Include="Models\WarehouseAreaDetail.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AdminService\AdminService.cs" />
@@ -133,11 +152,29 @@
     <Compile Include="Services\BaseService\IBaseService.cs" />
     <Compile Include="Services\ProductService\IProductSerivce.cs" />
     <Compile Include="Services\ProductService\ProductService.cs" />
+    <Compile Include="User_control\ShiftManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\ShiftManagement.Designer.cs">
+      <DependentUpon>ShiftManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_control\uc_Donhang.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User_control\uc_Donhang.Designer.cs">
       <DependentUpon>uc_Donhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_control\uc_DonVi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_DonVi.Designer.cs">
+      <DependentUpon>uc_DonVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_control\uc_EmployeeSalary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_EmployeeSalary.Designer.cs">
+      <DependentUpon>uc_EmployeeSalary.cs</DependentUpon>
     </Compile>
     <Compile Include="User_control\uc_KhachHang.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +206,18 @@
     <Compile Include="User_control\uc_Product.Designer.cs">
       <DependentUpon>uc_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_control\uc_Warehouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_Warehouse.Designer.cs">
+      <DependentUpon>uc_Warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_control\uc_WarehouseArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_WarehouseArea.Designer.cs">
+      <DependentUpon>uc_WarehouseArea.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="form\Form_BanHang.resx">
       <DependentUpon>Form_BanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +245,9 @@
     <EmbeddedResource Include="Migrations\202308201646282_fix.resx">
       <DependentUpon>202308201646282_fix.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308271630343_create_any_table.resx">
+      <DependentUpon>202308271630343_create_any_table.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -206,8 +258,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User_control\ShiftManagement.resx">
+      <DependentUpon>ShiftManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_Donhang.resx">
       <DependentUpon>uc_Donhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_DonVi.resx">
+      <DependentUpon>uc_DonVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_EmployeeSalary.resx">
+      <DependentUpon>uc_EmployeeSalary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_KhachHang.resx">
       <DependentUpon>uc_KhachHang.cs</DependentUpon>
@@ -223,6 +284,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_Product.resx">
       <DependentUpon>uc_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_Warehouse.resx">
+      <DependentUpon>uc_Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_WarehouseArea.resx">
+      <DependentUpon>uc_WarehouseArea.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

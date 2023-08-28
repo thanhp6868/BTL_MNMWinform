@@ -55,6 +55,7 @@ namespace BTL_QLBQA.form
             this.button1.TabIndex = 1;
             this.button1.Text = "Bán hàng";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -81,6 +82,7 @@ namespace BTL_QLBQA.form
             this.MinimumSize = new System.Drawing.Size(576, 255);
             this.Name = "Form_main_menu";
             this.Text = "Form_main_menu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_main_menu_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

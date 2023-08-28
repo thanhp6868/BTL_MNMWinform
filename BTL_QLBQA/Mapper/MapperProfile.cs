@@ -1,7 +1,11 @@
 ﻿using AutoMapper;
+using BTL_QLBQA.Dtos.Customer;
 using BTL_QLBQA.Dtos.Employees;
 using BTL_QLBQA.Dtos.Products;
+using BTL_QLBQA.Dtos.Shifts;
 using BTL_QLBQA.Dtos.Suppliers;
+using BTL_QLBQA.Dtos.Warehouse;
+using BTL_QLBQA.Dtos.WarehouseAreas;
 using BTL_QLBQA.Models;
 
 public class MappingProfile : Profile
@@ -17,7 +21,10 @@ public class MappingProfile : Profile
             p.MapFrom(src => (src.Supplier != null) ? src.Supplier.Name : ""));
 
         CreateMap<Supplier, SupplierDto>();
-
         CreateMap<Employee, EmployeeDto>();
+        CreateMap<Shift, ShiftDto>();
+        CreateMap<Customer, CustomerDto>();
+        CreateMap<WareHouse, WarehouseDto>();
+        CreateMap<WarehouseArea, WarehouseAreaDto>();
     }
 }

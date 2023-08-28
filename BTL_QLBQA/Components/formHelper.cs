@@ -40,6 +40,8 @@ namespace BTL_QLBQA.Components
                 {
                     ((DateTimePicker)item).Value = DateTime.Now;
                 }
+                if (item is NumericUpDown)
+                    ((NumericUpDown)item).Value = ((NumericUpDown)item).Minimum;
             }
         }
     }

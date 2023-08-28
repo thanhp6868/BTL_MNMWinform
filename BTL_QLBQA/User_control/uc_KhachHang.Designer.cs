@@ -29,127 +29,33 @@ namespace BTL_QLBQA.User_control
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtGhiChu = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtTenKH = new System.Windows.Forms.TextBox();
-            this.txtSDT = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
-            this.btn_timkiem = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dtgv_Diem = new System.Windows.Forms.DataGridView();
-            this.cMaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cTenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cGhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btn_timkiem = new System.Windows.Forms.Button();
+            this.gbForm = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.dgvCustomer = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPhoneNum = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNote = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Diem)).BeginInit();
+            this.gbForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtGhiChu
-            // 
-            this.txtGhiChu.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGhiChu.Location = new System.Drawing.Point(101, 129);
-            this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(173, 21);
-            this.txtGhiChu.TabIndex = 27;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 15);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Ghi chú:";
-            // 
-            // txtTenKH
-            // 
-            this.txtTenKH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenKH.Location = new System.Drawing.Point(101, 48);
-            this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(173, 21);
-            this.txtTenKH.TabIndex = 22;
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(101, 102);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(173, 21);
-            this.txtSDT.TabIndex = 23;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 15);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "SĐT:";
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(101, 75);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(173, 21);
-            this.txtDiaChi.TabIndex = 24;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Địa chỉ:";
-            // 
-            // txtMaKH
-            // 
-            this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKH.Location = new System.Drawing.Point(101, 19);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(173, 21);
-            this.txtMaKH.TabIndex = 25;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 15);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Tên khách hàng:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 15);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Mã khách hàng:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
@@ -157,9 +63,9 @@ namespace BTL_QLBQA.User_control
             this.groupBox1.Controls.Add(this.btn_xoa);
             this.groupBox1.Controls.Add(this.btn_sua);
             this.groupBox1.Controls.Add(this.btn_them);
-            this.groupBox1.Location = new System.Drawing.Point(697, 420);
+            this.groupBox1.Location = new System.Drawing.Point(1043, 464);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(259, 149);
+            this.groupBox1.Size = new System.Drawing.Size(287, 202);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             // 
@@ -170,12 +76,13 @@ namespace BTL_QLBQA.User_control
             this.btn_reset.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_reset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Location = new System.Drawing.Point(147, 89);
+            this.btn_reset.Location = new System.Drawing.Point(161, 89);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(104, 45);
             this.btn_reset.TabIndex = 21;
             this.btn_reset.Text = "Reload";
             this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_xoa
             // 
@@ -184,12 +91,13 @@ namespace BTL_QLBQA.User_control
             this.btn_xoa.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_xoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa.Location = new System.Drawing.Point(8, 89);
+            this.btn_xoa.Location = new System.Drawing.Point(22, 89);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(104, 45);
             this.btn_xoa.TabIndex = 22;
             this.btn_xoa.Text = "Xoá";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -198,12 +106,13 @@ namespace BTL_QLBQA.User_control
             this.btn_sua.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua.Location = new System.Drawing.Point(147, 22);
+            this.btn_sua.Location = new System.Drawing.Point(161, 22);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(104, 45);
             this.btn_sua.TabIndex = 23;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = false;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -212,103 +121,26 @@ namespace BTL_QLBQA.User_control
             this.btn_them.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_them.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Location = new System.Drawing.Point(8, 22);
+            this.btn_them.Location = new System.Drawing.Point(22, 22);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(104, 45);
             this.btn_them.TabIndex = 24;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // btn_timkiem
+            // label8
             // 
-            this.btn_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_timkiem.BackColor = System.Drawing.Color.White;
-            this.btn_timkiem.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_timkiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_timkiem.Location = new System.Drawing.Point(591, 7);
-            this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(88, 25);
-            this.btn_timkiem.TabIndex = 55;
-            this.btn_timkiem.Text = "Tìm kiếm";
-            this.btn_timkiem.UseVisualStyleBackColor = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtGhiChu);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtTenKH);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txtSDT);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.txtDiaChi);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.txtMaKH);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(686, 56);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(287, 325);
-            this.groupBox2.TabIndex = 52;
-            this.groupBox2.TabStop = false;
-            // 
-            // dtgv_Diem
-            // 
-            this.dtgv_Diem.AllowUserToAddRows = false;
-            this.dtgv_Diem.AllowUserToDeleteRows = false;
-            this.dtgv_Diem.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dtgv_Diem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_Diem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cMaKH,
-            this.cTenKH,
-            this.cDiaChi,
-            this.cSDT,
-            this.cGhiChu});
-            this.dtgv_Diem.Location = new System.Drawing.Point(1, 56);
-            this.dtgv_Diem.Name = "dtgv_Diem";
-            this.dtgv_Diem.ReadOnly = true;
-            this.dtgv_Diem.RowHeadersVisible = false;
-            this.dtgv_Diem.Size = new System.Drawing.Size(679, 554);
-            this.dtgv_Diem.TabIndex = 50;
-            // 
-            // cMaKH
-            // 
-            this.cMaKH.DataPropertyName = "MaKH";
-            this.cMaKH.HeaderText = "Mã khách hàng";
-            this.cMaKH.MinimumWidth = 100;
-            this.cMaKH.Name = "cMaKH";
-            this.cMaKH.ReadOnly = true;
-            // 
-            // cTenKH
-            // 
-            this.cTenKH.DataPropertyName = "TenKH";
-            this.cTenKH.HeaderText = "Tên khách hàng";
-            this.cTenKH.Name = "cTenKH";
-            this.cTenKH.ReadOnly = true;
-            this.cTenKH.Width = 200;
-            // 
-            // cDiaChi
-            // 
-            this.cDiaChi.DataPropertyName = "DiaChi";
-            this.cDiaChi.HeaderText = "Địa chỉ";
-            this.cDiaChi.Name = "cDiaChi";
-            this.cDiaChi.ReadOnly = true;
-            this.cDiaChi.Width = 150;
-            // 
-            // cSDT
-            // 
-            this.cSDT.DataPropertyName = "SDT";
-            this.cSDT.HeaderText = "SĐT";
-            this.cSDT.Name = "cSDT";
-            this.cSDT.ReadOnly = true;
-            // 
-            // cGhiChu
-            // 
-            this.cGhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cGhiChu.DataPropertyName = "GhiChu";
-            this.cGhiChu.HeaderText = "Ghi chú";
-            this.cGhiChu.Name = "cGhiChu";
-            this.cGhiChu.ReadOnly = true;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(365, 49);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 14);
+            this.label8.TabIndex = 56;
+            this.label8.Text = "* nhập tên hoặc mã ";
             // 
             // btn_clear
             // 
@@ -316,7 +148,7 @@ namespace BTL_QLBQA.User_control
             this.btn_clear.BackColor = System.Drawing.Color.White;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_clear.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.Location = new System.Drawing.Point(558, 7);
+            this.btn_clear.Location = new System.Drawing.Point(596, 23);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(27, 23);
             this.btn_clear.TabIndex = 54;
@@ -327,73 +159,231 @@ namespace BTL_QLBQA.User_control
             // 
             this.txt_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_timkiem.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timkiem.Location = new System.Drawing.Point(330, 7);
+            this.txt_timkiem.Location = new System.Drawing.Point(368, 23);
             this.txt_timkiem.Multiline = true;
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(255, 23);
             this.txt_timkiem.TabIndex = 53;
             // 
-            // label8
+            // btn_timkiem
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(327, 30);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 14);
-            this.label8.TabIndex = 56;
-            this.label8.Text = "* nhập tên hoặc mã ";
+            this.btn_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_timkiem.BackColor = System.Drawing.Color.White;
+            this.btn_timkiem.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_timkiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_timkiem.Location = new System.Drawing.Point(629, 23);
+            this.btn_timkiem.Name = "btn_timkiem";
+            this.btn_timkiem.Size = new System.Drawing.Size(88, 25);
+            this.btn_timkiem.TabIndex = 55;
+            this.btn_timkiem.Text = "Tìm kiếm";
+            this.btn_timkiem.UseVisualStyleBackColor = false;
+            // 
+            // gbForm
+            // 
+            this.gbForm.Controls.Add(this.label10);
+            this.gbForm.Controls.Add(this.label9);
+            this.gbForm.Controls.Add(this.label5);
+            this.gbForm.Controls.Add(this.txtPhoneNum);
+            this.gbForm.Controls.Add(this.txtName);
+            this.gbForm.Controls.Add(this.label4);
+            this.gbForm.Controls.Add(this.txtNote);
+            this.gbForm.Controls.Add(this.txtAddress);
+            this.gbForm.Controls.Add(this.txtId);
+            this.gbForm.Controls.Add(this.label1);
+            this.gbForm.Controls.Add(this.btnCancel);
+            this.gbForm.Controls.Add(this.btnSave);
+            this.gbForm.Enabled = false;
+            this.gbForm.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbForm.Location = new System.Drawing.Point(1043, 61);
+            this.gbForm.Name = "gbForm";
+            this.gbForm.Size = new System.Drawing.Size(287, 397);
+            this.gbForm.TabIndex = 52;
+            this.gbForm.TabStop = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(161, 330);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(104, 45);
+            this.btnCancel.TabIndex = 29;
+            this.btnCancel.Text = "Huỷ";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(22, 330);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 45);
+            this.btnSave.TabIndex = 28;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // dgvCustomer
+            // 
+            this.dgvCustomer.AllowUserToAddRows = false;
+            this.dgvCustomer.AllowUserToDeleteRows = false;
+            this.dgvCustomer.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomer.Location = new System.Drawing.Point(10, 67);
+            this.dgvCustomer.Name = "dgvCustomer";
+            this.dgvCustomer.ReadOnly = true;
+            this.dgvCustomer.RowHeadersVisible = false;
+            this.dgvCustomer.Size = new System.Drawing.Size(1027, 599);
+            this.dgvCustomer.TabIndex = 50;
+            this.dgvCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellClick);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(12, 81);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(45, 15);
+            this.label10.TabIndex = 49;
+            this.label10.Text = "Địa chỉ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 109);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 15);
+            this.label9.TabIndex = 48;
+            this.label9.Text = "SĐT";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(11, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 15);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Ghi chú: ";
+            // 
+            // txtPhoneNum
+            // 
+            this.txtPhoneNum.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneNum.Location = new System.Drawing.Point(103, 103);
+            this.txtPhoneNum.Name = "txtPhoneNum";
+            this.txtPhoneNum.Size = new System.Drawing.Size(173, 21);
+            this.txtPhoneNum.TabIndex = 40;
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(103, 47);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(173, 21);
+            this.txtName.TabIndex = 41;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 15);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Tên";
+            // 
+            // txtNote
+            // 
+            this.txtNote.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNote.Location = new System.Drawing.Point(103, 133);
+            this.txtNote.Multiline = true;
+            this.txtNote.Name = "txtNote";
+            this.txtNote.Size = new System.Drawing.Size(172, 53);
+            this.txtNote.TabIndex = 43;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(103, 74);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(173, 21);
+            this.txtAddress.TabIndex = 45;
+            // 
+            // txtId
+            // 
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(103, 18);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(173, 21);
+            this.txtId.TabIndex = 46;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 15);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Mã khách hàng";
             // 
             // uc_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btn_timkiem);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dtgv_Diem);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.txt_timkiem);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btn_timkiem);
+            this.Controls.Add(this.gbForm);
+            this.Controls.Add(this.dgvCustomer);
             this.Name = "uc_KhachHang";
-            this.Size = new System.Drawing.Size(975, 616);
+            this.Size = new System.Drawing.Size(1340, 689);
+            this.Load += new System.EventHandler(this.uc_KhachHang_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Diem)).EndInit();
+            this.gbForm.ResumeLayout(false);
+            this.gbForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtGhiChu;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTenKH;
-        private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMaKH;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
+
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Button btn_them;
-        private System.Windows.Forms.Button btn_timkiem;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dtgv_Diem;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.TextBox txt_timkiem;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cMaKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cTenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cDiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cSDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cGhiChu;
+        private System.Windows.Forms.Button btn_timkiem;
+        private System.Windows.Forms.GroupBox gbForm;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.DataGridView dgvCustomer;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtPhoneNum;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtNote;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label1;
     }
 }

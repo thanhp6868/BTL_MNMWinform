@@ -16,5 +16,15 @@ namespace BTL_QLBQA.User_control
         {
             InitializeComponent();
         }
+        private static uc_PhanQuyen ucPhanQuyen;
+        public static uc_PhanQuyen Instance
+        {
+            get
+            {
+                if (ucPhanQuyen == null)
+                    ucPhanQuyen = new uc_PhanQuyen();
+                return ucPhanQuyen;
+            }
+        }
     }
 }

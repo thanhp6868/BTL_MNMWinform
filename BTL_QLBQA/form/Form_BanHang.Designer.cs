@@ -524,6 +524,7 @@ namespace BTL_QLBQA.form
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_BanHang";
             this.Text = "Tạo hoá đơn bán hàng";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_BanHang_FormClosed);
             this.Load += new System.EventHandler(this.Form_BanHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

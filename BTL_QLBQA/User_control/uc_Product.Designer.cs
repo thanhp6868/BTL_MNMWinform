@@ -31,6 +31,12 @@ namespace BTL_QLBQA.User_control
         {
             this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.gbForm = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cbbSupplier = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbbUnit = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbbProductCategory = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtQuantity = new System.Windows.Forms.TextBox();
@@ -54,12 +60,6 @@ namespace BTL_QLBQA.User_control
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.cbbProductCategory = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbbUnit = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cbbSupplier = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.gbForm.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -71,11 +71,11 @@ namespace BTL_QLBQA.User_control
             this.dgvProduct.AllowUserToDeleteRows = false;
             this.dgvProduct.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduct.Location = new System.Drawing.Point(0, 62);
+            this.dgvProduct.Location = new System.Drawing.Point(3, 62);
             this.dgvProduct.Name = "dgvProduct";
             this.dgvProduct.ReadOnly = true;
             this.dgvProduct.RowHeadersVisible = false;
-            this.dgvProduct.Size = new System.Drawing.Size(679, 554);
+            this.dgvProduct.Size = new System.Drawing.Size(1027, 624);
             this.dgvProduct.TabIndex = 35;
             this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
             // 
@@ -103,11 +103,65 @@ namespace BTL_QLBQA.User_control
             this.gbForm.Controls.Add(this.label1);
             this.gbForm.Enabled = false;
             this.gbForm.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbForm.Location = new System.Drawing.Point(685, 62);
+            this.gbForm.Location = new System.Drawing.Point(1036, 62);
             this.gbForm.Name = "gbForm";
-            this.gbForm.Size = new System.Drawing.Size(287, 358);
+            this.gbForm.Size = new System.Drawing.Size(301, 464);
             this.gbForm.TabIndex = 38;
             this.gbForm.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(5, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(30, 15);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Loại";
+            // 
+            // cbbSupplier
+            // 
+            this.cbbSupplier.FormattingEnabled = true;
+            this.cbbSupplier.Location = new System.Drawing.Point(98, 133);
+            this.cbbSupplier.Name = "cbbSupplier";
+            this.cbbSupplier.Size = new System.Drawing.Size(172, 22);
+            this.cbbSupplier.TabIndex = 34;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(5, 110);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 15);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Đơn vị tính";
+            // 
+            // cbbUnit
+            // 
+            this.cbbUnit.FormattingEnabled = true;
+            this.cbbUnit.Location = new System.Drawing.Point(98, 105);
+            this.cbbUnit.Name = "cbbUnit";
+            this.cbbUnit.Size = new System.Drawing.Size(172, 22);
+            this.cbbUnit.TabIndex = 32;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(5, 133);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 15);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Nhà cung cấp";
+            // 
+            // cbbProductCategory
+            // 
+            this.cbbProductCategory.FormattingEnabled = true;
+            this.cbbProductCategory.Location = new System.Drawing.Point(98, 75);
+            this.cbbProductCategory.Name = "cbbProductCategory";
+            this.cbbProductCategory.Size = new System.Drawing.Size(172, 22);
+            this.cbbProductCategory.TabIndex = 30;
             // 
             // btnCancel
             // 
@@ -116,7 +170,7 @@ namespace BTL_QLBQA.User_control
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(158, 300);
+            this.btnCancel.Location = new System.Drawing.Point(168, 419);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(104, 45);
             this.btnCancel.TabIndex = 29;
@@ -131,7 +185,7 @@ namespace BTL_QLBQA.User_control
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(19, 300);
+            this.btnSave.Location = new System.Drawing.Point(29, 419);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 45);
             this.btnSave.TabIndex = 28;
@@ -199,7 +253,7 @@ namespace BTL_QLBQA.User_control
             this.txtNote.Location = new System.Drawing.Point(97, 257);
             this.txtNote.Multiline = true;
             this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(172, 37);
+            this.txtNote.Size = new System.Drawing.Size(172, 53);
             this.txtNote.TabIndex = 23;
             // 
             // label3
@@ -255,9 +309,9 @@ namespace BTL_QLBQA.User_control
             this.groupBox1.Controls.Add(this.btn_xoa);
             this.groupBox1.Controls.Add(this.btn_sua);
             this.groupBox1.Controls.Add(this.btn_them);
-            this.groupBox1.Location = new System.Drawing.Point(696, 426);
+            this.groupBox1.Location = new System.Drawing.Point(1036, 532);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(259, 149);
+            this.groupBox1.Size = new System.Drawing.Size(301, 154);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
@@ -268,7 +322,7 @@ namespace BTL_QLBQA.User_control
             this.btn_reset.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_reset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Location = new System.Drawing.Point(147, 89);
+            this.btn_reset.Location = new System.Drawing.Point(168, 89);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(104, 45);
             this.btn_reset.TabIndex = 21;
@@ -283,7 +337,7 @@ namespace BTL_QLBQA.User_control
             this.btn_xoa.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_xoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa.Location = new System.Drawing.Point(8, 89);
+            this.btn_xoa.Location = new System.Drawing.Point(29, 89);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(104, 45);
             this.btn_xoa.TabIndex = 22;
@@ -298,7 +352,7 @@ namespace BTL_QLBQA.User_control
             this.btn_sua.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua.Location = new System.Drawing.Point(147, 22);
+            this.btn_sua.Location = new System.Drawing.Point(168, 22);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(104, 45);
             this.btn_sua.TabIndex = 23;
@@ -313,7 +367,7 @@ namespace BTL_QLBQA.User_control
             this.btn_them.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_them.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Location = new System.Drawing.Point(8, 22);
+            this.btn_them.Location = new System.Drawing.Point(29, 22);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(104, 45);
             this.btn_them.TabIndex = 24;
@@ -328,7 +382,7 @@ namespace BTL_QLBQA.User_control
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(326, 36);
+            this.label8.Location = new System.Drawing.Point(343, 41);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 14);
             this.label8.TabIndex = 42;
@@ -340,7 +394,7 @@ namespace BTL_QLBQA.User_control
             this.btn_clear.BackColor = System.Drawing.Color.White;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_clear.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.Location = new System.Drawing.Point(557, 13);
+            this.btn_clear.Location = new System.Drawing.Point(574, 18);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(27, 23);
             this.btn_clear.TabIndex = 40;
@@ -355,7 +409,7 @@ namespace BTL_QLBQA.User_control
             this.btn_timkiem.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_timkiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_timkiem.Location = new System.Drawing.Point(590, 13);
+            this.btn_timkiem.Location = new System.Drawing.Point(607, 18);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(88, 25);
             this.btn_timkiem.TabIndex = 41;
@@ -367,65 +421,11 @@ namespace BTL_QLBQA.User_control
             // 
             this.txt_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_timkiem.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timkiem.Location = new System.Drawing.Point(329, 13);
+            this.txt_timkiem.Location = new System.Drawing.Point(346, 18);
             this.txt_timkiem.Multiline = true;
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(255, 23);
             this.txt_timkiem.TabIndex = 39;
-            // 
-            // cbbProductCategory
-            // 
-            this.cbbProductCategory.FormattingEnabled = true;
-            this.cbbProductCategory.Location = new System.Drawing.Point(98, 75);
-            this.cbbProductCategory.Name = "cbbProductCategory";
-            this.cbbProductCategory.Size = new System.Drawing.Size(172, 22);
-            this.cbbProductCategory.TabIndex = 30;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 133);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 15);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Nhà cung cấp";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(5, 110);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 15);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Đơn vị tính";
-            // 
-            // cbbUnit
-            // 
-            this.cbbUnit.FormattingEnabled = true;
-            this.cbbUnit.Location = new System.Drawing.Point(98, 105);
-            this.cbbUnit.Name = "cbbUnit";
-            this.cbbUnit.Size = new System.Drawing.Size(172, 22);
-            this.cbbUnit.TabIndex = 32;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(5, 82);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(30, 15);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Loại";
-            // 
-            // cbbSupplier
-            // 
-            this.cbbSupplier.FormattingEnabled = true;
-            this.cbbSupplier.Location = new System.Drawing.Point(98, 133);
-            this.cbbSupplier.Name = "cbbSupplier";
-            this.cbbSupplier.Size = new System.Drawing.Size(172, 22);
-            this.cbbSupplier.TabIndex = 34;
             // 
             // uc_Product
             // 
@@ -440,7 +440,7 @@ namespace BTL_QLBQA.User_control
             this.Controls.Add(this.dgvProduct);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "uc_Product";
-            this.Size = new System.Drawing.Size(975, 616);
+            this.Size = new System.Drawing.Size(1340, 689);
             this.Load += new System.EventHandler(this.uc_Product_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.gbForm.ResumeLayout(false);

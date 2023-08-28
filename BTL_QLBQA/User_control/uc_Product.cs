@@ -79,12 +79,20 @@ namespace BTL_QLBQA.User_control
         private void btnSave_Click(object sender, EventArgs e)
         {
             Product p = ProductId > 0 ? _productSerivce.GetByID(int.Parse(txtId.Text)) : new Product();
+            if(p == null)
+            {
+                MessageBox.Show("Sản phẩm không tồn tại");
+                return;
+            }    
             p.Name = txtName.Text;
             p.ImportPrice = float.Parse(txtImportPrice.Text);
             p.ExportPrice = float.Parse(txtExportPrice.Text);
-            p.SupplierId = int.Parse(cbbSupplier.SelectedValue.ToString());
-            p.ProductCategoryId = int.Parse(cbbProductCategory.SelectedValue.ToString());
-            p.UnitId = int.Parse(cbbUnit.SelectedValue.ToString());
+            if (cbbSupplier.SelectedValue != null)
+                p.SupplierId = int.Parse(cbbSupplier.SelectedValue.ToString());
+            if(cbbProductCategory.SelectedValue != null)
+                p.ProductCategoryId = int.Parse(cbbProductCategory.SelectedValue.ToString());
+            if (cbbUnit.SelectedValue != null)
+                p.UnitId = int.Parse(cbbUnit.SelectedValue.ToString());
             p.Note = txtNote.Text;
             p.Quantity = int.Parse(txtQuantity.Text);
             if(ProductId > 0)
@@ -106,7 +114,7 @@ namespace BTL_QLBQA.User_control
 
         private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex > 0 && !gbForm.Enabled)
+            if(e.ColumnIndex >= 0 && !gbForm.Enabled)
             {
                 var product = _productSerivce.GetByID(int.Parse(dgvProduct.Rows[e.RowIndex].Cells[0].Value.ToString()));
                 if(product != null)
@@ -133,7 +141,7 @@ namespace BTL_QLBQA.User_control
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn san pham cần sửa");
+                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa");
             }
         }
 
@@ -157,7 +165,7 @@ namespace BTL_QLBQA.User_control
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn san pham cần sửa");
+                MessageBox.Show("Vui lòng chọn sản phẩm cần sửa");
             }
         }
 

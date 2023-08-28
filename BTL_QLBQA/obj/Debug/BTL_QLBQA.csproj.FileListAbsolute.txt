@@ -99,3 +99,11 @@ D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.exe
 D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.pdb
 D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\AutoMapper.dll
 D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\bin\Debug\AutoMapper.xml
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\AutoMapper.dll
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\bin\Debug\AutoMapper.xml
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.ShiftManagement.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.create_any_table.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_DonVi.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_EmployeeSalary.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Warehouse.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_WarehouseArea.resources

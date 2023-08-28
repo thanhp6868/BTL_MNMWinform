@@ -21,6 +21,13 @@ namespace BTL_QLBQA.DataAccess
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Unit> Units { get; set; }
+        public DbSet<Shift> Shifts { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Contract> Contracts { get; set; }
+        public DbSet<Attendance> Attendances { get; set; }
+        public DbSet<EmployeeSalary> EmployeeSalaryies { get; set; }
+        public DbSet<WarehouseArea> WarehouseAreas { get; set; }
+        public DbSet<WareHouse> Warehouses { get; set; }
+        public DbSet<WarehouseAreaDetail> WarehouseAreaDetails { get; set; }
     }
 }

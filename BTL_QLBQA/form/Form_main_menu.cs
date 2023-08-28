@@ -21,7 +21,19 @@ namespace BTL_QLBQA.form
         {
             Form_main form = new Form_main();
             form.ShowDialog();
-          
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_BanHang form = new Form_BanHang();
+            form.ShowDialog();
+            this.Hide();
+        }
+
+        private void Form_main_menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

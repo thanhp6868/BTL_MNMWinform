@@ -117,7 +117,7 @@ namespace BTL_QLBQA.User_control
             this.btn_timkiem.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_timkiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_timkiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_timkiem.Location = new System.Drawing.Point(591, 7);
+            this.btn_timkiem.Location = new System.Drawing.Point(696, 7);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(88, 25);
             this.btn_timkiem.TabIndex = 69;
@@ -130,7 +130,7 @@ namespace BTL_QLBQA.User_control
             this.btn_clear.BackColor = System.Drawing.Color.White;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_clear.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clear.Location = new System.Drawing.Point(558, 7);
+            this.btn_clear.Location = new System.Drawing.Point(663, 7);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(27, 23);
             this.btn_clear.TabIndex = 68;
@@ -154,7 +154,7 @@ namespace BTL_QLBQA.User_control
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(327, 30);
+            this.label8.Location = new System.Drawing.Point(432, 30);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 14);
             this.label8.TabIndex = 70;
@@ -192,7 +192,7 @@ namespace BTL_QLBQA.User_control
             this.groupBox1.Controls.Add(this.btn_xoa);
             this.groupBox1.Controls.Add(this.btn_sua);
             this.groupBox1.Controls.Add(this.btn_them);
-            this.groupBox1.Location = new System.Drawing.Point(697, 420);
+            this.groupBox1.Location = new System.Drawing.Point(906, 420);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(259, 149);
             this.groupBox1.TabIndex = 65;
@@ -225,7 +225,7 @@ namespace BTL_QLBQA.User_control
             this.groupBox2.Controls.Add(this.txtUsername);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(686, 56);
+            this.groupBox2.Location = new System.Drawing.Point(895, 56);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(287, 325);
             this.groupBox2.TabIndex = 66;
@@ -245,7 +245,7 @@ namespace BTL_QLBQA.User_control
             this.dtgv_Diem.Name = "dtgv_Diem";
             this.dtgv_Diem.ReadOnly = true;
             this.dtgv_Diem.RowHeadersVisible = false;
-            this.dtgv_Diem.Size = new System.Drawing.Size(679, 554);
+            this.dtgv_Diem.Size = new System.Drawing.Size(888, 554);
             this.dtgv_Diem.TabIndex = 64;
             // 
             // cusername
@@ -273,7 +273,7 @@ namespace BTL_QLBQA.User_control
             // 
             this.txt_timkiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txt_timkiem.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timkiem.Location = new System.Drawing.Point(330, 7);
+            this.txt_timkiem.Location = new System.Drawing.Point(435, 7);
             this.txt_timkiem.Multiline = true;
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(255, 23);
@@ -291,7 +291,7 @@ namespace BTL_QLBQA.User_control
             this.Controls.Add(this.dtgv_Diem);
             this.Controls.Add(this.txt_timkiem);
             this.Name = "uc_PhanQuyen";
-            this.Size = new System.Drawing.Size(975, 616);
+            this.Size = new System.Drawing.Size(1185, 664);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
