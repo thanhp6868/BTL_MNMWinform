@@ -122,3 +122,4 @@ D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migratio
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.rename_column.resources
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Unit.resources
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.add_column_employeeId.resources
+D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_BanHang.resources

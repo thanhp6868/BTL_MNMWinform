@@ -183,6 +183,12 @@
     <Compile Include="User_control\ShiftManagement.Designer.cs">
       <DependentUpon>ShiftManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_control\uc_BanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_BanHang.Designer.cs">
+      <DependentUpon>uc_BanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_control\uc_Category.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -309,6 +315,9 @@
     </Compile>
     <EmbeddedResource Include="User_control\ShiftManagement.resx">
       <DependentUpon>ShiftManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_BanHang.resx">
+      <DependentUpon>uc_BanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_Category.resx">
       <DependentUpon>uc_Category.cs</DependentUpon>
