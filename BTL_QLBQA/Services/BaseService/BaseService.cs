@@ -60,7 +60,7 @@ namespace BTL_QLBQA.Services.BaseService
             return entity;
         }
 
-        public void loadComboBox(ComboBox b, string valueName = "Name")
+        public virtual void loadComboBox(ComboBox b, string valueName = "Name")
         {
             try
             {

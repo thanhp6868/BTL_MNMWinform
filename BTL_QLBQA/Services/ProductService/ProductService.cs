@@ -4,6 +4,7 @@ using BTL_QLBQA.Services.BaseService;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace BTL_QLBQA.Services.ProductService
 {
@@ -19,6 +20,11 @@ namespace BTL_QLBQA.Services.ProductService
                .ToList()
                .Select(p => Program.mapper.Map<ProductDto>(p))
                .ToList();
+        }
+        public override void loadComboBox(ComboBox b, string valueName = "Name")
+        {
+            base.loadComboBox(b, valueName);
+            b.SelectedIndex = -1;
         }
     }
 }

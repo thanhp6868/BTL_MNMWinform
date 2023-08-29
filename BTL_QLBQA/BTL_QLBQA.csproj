@@ -149,6 +149,18 @@
     <Compile Include="Migrations\202308291128031_add_column_employeeId.designer.cs">
       <DependentUpon>202308291128031_add_column_employeeId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308291601458_add-create-at-table-order.cs" />
+    <Compile Include="Migrations\202308291601458_add-create-at-table-order.designer.cs">
+      <DependentUpon>202308291601458_add-create-at-table-order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308291607285_add-employee-id-table-order.cs" />
+    <Compile Include="Migrations\202308291607285_add-employee-id-table-order.designer.cs">
+      <DependentUpon>202308291607285_add-employee-id-table-order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308291654382_rename_column_order.cs" />
+    <Compile Include="Migrations\202308291654382_rename_column_order.designer.cs">
+      <DependentUpon>202308291654382_rename_column_order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Attendance.cs" />
@@ -175,6 +187,8 @@
     <Compile Include="Services\AdminService\IAdminService.cs" />
     <Compile Include="Services\BaseService\BaseService.cs" />
     <Compile Include="Services\BaseService\IBaseService.cs" />
+    <Compile Include="Services\OrdersService\IOrderService.cs" />
+    <Compile Include="Services\OrdersService\OrderService.cs" />
     <Compile Include="Services\ProductService\IProductSerivce.cs" />
     <Compile Include="Services\ProductService\ProductService.cs" />
     <Compile Include="User_control\ShiftManagement.cs">
@@ -302,6 +316,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308291128031_add_column_employeeId.resx">
       <DependentUpon>202308291128031_add_column_employeeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308291601458_add-create-at-table-order.resx">
+      <DependentUpon>202308291601458_add-create-at-table-order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308291607285_add-employee-id-table-order.resx">
+      <DependentUpon>202308291607285_add-employee-id-table-order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308291654382_rename_column_order.resx">
+      <DependentUpon>202308291654382_rename_column_order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -21,7 +21,7 @@ namespace BTL_QLBQA.Models
 
         public float GetTotal()
         {
-            return Price * Quantity - Discount;
+            return Price * Quantity - (Price * Quantity / 100 * Discount);
         }
     }
 }
