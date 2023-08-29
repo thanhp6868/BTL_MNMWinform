@@ -44,9 +44,9 @@ namespace BTL_QLBQA.form
             this.hợpĐồngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.khoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.khoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bánHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.khoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.khuVựcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bánHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +98,7 @@ namespace BTL_QLBQA.form
             this.loạiSảnPhẩmToolStripMenuItem.Name = "loạiSảnPhẩmToolStripMenuItem";
             this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loạiSảnPhẩmToolStripMenuItem.Text = "Loại sản phẩm";
+            this.loạiSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.loạiSảnPhẩmToolStripMenuItem_Click);
             // 
             // đơnVịSảnPhẩmToolStripMenuItem
             // 
@@ -133,28 +134,28 @@ namespace BTL_QLBQA.form
             // quảnLýNhânViênToolStripMenuItem
             // 
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
-            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
             this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
             // lươngNhânViênToolStripMenuItem
             // 
             this.lươngNhânViênToolStripMenuItem.Name = "lươngNhânViênToolStripMenuItem";
-            this.lươngNhânViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lươngNhânViênToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.lươngNhânViênToolStripMenuItem.Text = "Lương nhân viên";
             this.lươngNhânViênToolStripMenuItem.Click += new System.EventHandler(this.lươngNhânViênToolStripMenuItem_Click);
             // 
             // caLàmToolStripMenuItem
             // 
             this.caLàmToolStripMenuItem.Name = "caLàmToolStripMenuItem";
-            this.caLàmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.caLàmToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.caLàmToolStripMenuItem.Text = "Ca làm";
             this.caLàmToolStripMenuItem.Click += new System.EventHandler(this.caLàmToolStripMenuItem_Click);
             // 
             // hợpĐồngToolStripMenuItem
             // 
             this.hợpĐồngToolStripMenuItem.Name = "hợpĐồngToolStripMenuItem";
-            this.hợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.hợpĐồngToolStripMenuItem.Text = "Hợp đồng";
             // 
             // khoToolStripMenuItem
@@ -174,25 +175,25 @@ namespace BTL_QLBQA.form
             this.khoToolStripMenuItem1.Text = "Kho";
             this.khoToolStripMenuItem1.Click += new System.EventHandler(this.khoToolStripMenuItem1_Click);
             // 
-            // bánHàngToolStripMenuItem
-            // 
-            this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
-            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.bánHàngToolStripMenuItem.Text = "Bán hàng";
-            this.bánHàngToolStripMenuItem.Click += new System.EventHandler(this.bánHàngToolStripMenuItem_Click);
-            // 
             // khoToolStripMenuItem2
             // 
             this.khoToolStripMenuItem2.Name = "khoToolStripMenuItem2";
-            this.khoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.khoToolStripMenuItem2.Size = new System.Drawing.Size(117, 22);
             this.khoToolStripMenuItem2.Text = "Kho";
             this.khoToolStripMenuItem2.Click += new System.EventHandler(this.khoToolStripMenuItem2_Click);
             // 
             // khuVựcToolStripMenuItem
             // 
             this.khuVựcToolStripMenuItem.Name = "khuVựcToolStripMenuItem";
-            this.khuVựcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.khuVựcToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.khuVựcToolStripMenuItem.Text = "Khu vực";
+            // 
+            // bánHàngToolStripMenuItem
+            // 
+            this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.bánHàngToolStripMenuItem.Text = "Bán hàng";
+            this.bánHàngToolStripMenuItem.Click += new System.EventHandler(this.bánHàngToolStripMenuItem_Click);
             // 
             // Form_main
             // 

@@ -1,5 +1,5 @@
 ﻿using BTL_QLBQA.Components;
-using BTL_QLBQA.Dtos.Warehouse;
+using BTL_QLBQA.Dtos.Categories;
 using BTL_QLBQA.Models;
 using BTL_QLBQA.Services.BaseService;
 using System;
@@ -14,33 +14,33 @@ using System.Windows.Forms;
 
 namespace BTL_QLBQA.User_control
 {
-    public partial class uc_Warehouse : UserControl
+    public partial class uc_Category : UserControl
     {
-        private int WarehouseID = 0;
-        private readonly IBaseService<WareHouse> _warehouseService;
-        public uc_Warehouse()
+        private int CategoryID = 0;
+        private readonly IBaseService<Category> _categoryService;
+        public uc_Category()
         {
             InitializeComponent();
-            _warehouseService = new BaseService<WareHouse>();
+            _categoryService = new BaseService<Category>();
         }
-
-        private static uc_Warehouse ucWarehouse;
-        public static uc_Warehouse Instance
+        private static uc_Category ucCategory;
+        public static uc_Category Instance
         {
             get
             {
-                if (ucWarehouse == null)
-                    ucWarehouse = new uc_Warehouse();
-                return ucWarehouse;
+                if (ucCategory == null)
+                    ucCategory = new uc_Category();
+                return ucCategory;
             }
         }
-        private void uc_Warehouse_Load(object sender, EventArgs e)
+
+        private void uc_Category_Load(object sender, EventArgs e)
         {
             loadData();
         }
         public void loadData()
         {
-            dgvWarehouse.DataSource = _warehouseService.GetAll().ToList().Select(s => Program.mapper.Map<WarehouseDto>(s)).ToList();
+            dgvCategory.DataSource = _categoryService.GetAll().ToList().Select(s => Program.mapper.Map<CategoryDto>(s)).ToList();
 
         }
         public void setEnable(bool value)
@@ -53,22 +53,22 @@ namespace BTL_QLBQA.User_control
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            WareHouse p = WarehouseID > 0 ? _warehouseService.GetByID(int.Parse(txtId.Text)) : new WareHouse();
+            Category p = CategoryID > 0 ? _categoryService.GetByID(int.Parse(txtId.Text)) : new Category();
             if (p == null)
             {
                 MessageBox.Show("Thông tin không tồn tại");
                 return;
             }
             p.Name = txtName.Text;
-            p.Address = txtAddress.Text;
+            p.Description = txtDescription.Text;
            
-            if (WarehouseID > 0)
+            if (CategoryID > 0)
             {
-                _warehouseService.Update(p);
+                _categoryService.Update(p);
             }
             else
             {
-                _warehouseService.Insert(p);
+                _categoryService.Insert(p);
             }
             loadData();
             setEnable(true);
@@ -82,29 +82,14 @@ namespace BTL_QLBQA.User_control
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            WarehouseID = 0;
+            CategoryID = 0;
             formHelper.loadGroupBox(gbForm);
             setEnable(false);
         }
 
-        private void dgvWarehouse_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex >= 0 && !gbForm.Enabled)
-            {
-                var p = _warehouseService.GetByID(int.Parse(dgvWarehouse.Rows[e.RowIndex].Cells[0].Value.ToString()));
-                if (p != null)
-                {
-                    WarehouseID = p.Id;
-                    txtId.Text = p.Id.ToString();
-                    txtName.Text = p.Name.ToString();
-                    txtAddress.Text = p.Address.ToString();
-                }
-            }
-        }
-
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            if (WarehouseID > 0)
+            if (CategoryID > 0)
             {
                 setEnable(false);
             }
@@ -116,12 +101,12 @@ namespace BTL_QLBQA.User_control
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            if (WarehouseID > 0)
+            if (CategoryID > 0)
             {
-                WareHouse p = _warehouseService.GetByID(WarehouseID);
+                Category p = _categoryService.GetByID(CategoryID);
                 if (p != null)
                 {
-                    if (_warehouseService.Delete(p.Id))
+                    if (_categoryService.Delete(p.Id))
                     {
                         MessageBox.Show("Xóa thành công");
                         loadData();
@@ -141,6 +126,22 @@ namespace BTL_QLBQA.User_control
         private void btn_reset_Click(object sender, EventArgs e)
         {
             loadData();
+        }
+
+        private void dgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && !gbForm.Enabled)
+            {
+                var p = _categoryService.GetByID(int.Parse(dgvCategory.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                if (p != null)
+                {
+                    CategoryID = p.Id;
+                    txtId.Text = p.Id.ToString();
+                    txtName.Text = p.Name.ToString();
+                    txtDescription.Text = p.Description.ToString();
+                    
+                }
+            }
         }
     }
 }

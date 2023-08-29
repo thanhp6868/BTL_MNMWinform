@@ -14,5 +14,7 @@ namespace BTL_QLBQA.Dtos.Warehouse
         public int Id { get; set; }
         [DisplayName("Tên kho")]
         public string Name { get; set; }
+        [DisplayName("Địa chỉ kho")]
+        public string Address { get; set; }
     }
 }

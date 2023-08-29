@@ -13,8 +13,8 @@ namespace BTL_QLBQA.Models
         public int Id { get; set; }
         [DisplayName("Tên sản phẩm")]
         public string Name { get; set; }
+        public string Address { get; set; }
         public ICollection <WarehouseArea> WarehouseAreas { get; set; }
-
 
     }
 }

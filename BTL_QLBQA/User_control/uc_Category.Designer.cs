@@ -1,7 +1,7 @@
 ﻿
 namespace BTL_QLBQA.User_control
 {
-    partial class uc_Warehouse
+    partial class uc_Category
     {
         /// <summary> 
         /// Required designer variable.
@@ -39,19 +39,18 @@ namespace BTL_QLBQA.User_control
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.gbForm = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvWarehouse = new System.Windows.Forms.DataGridView();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgvCategory = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.gbForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWarehouse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -63,7 +62,7 @@ namespace BTL_QLBQA.User_control
             this.groupBox1.Location = new System.Drawing.Point(1043, 464);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(287, 202);
-            this.groupBox1.TabIndex = 51;
+            this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             // 
             // btn_reset
@@ -136,7 +135,7 @@ namespace BTL_QLBQA.User_control
             this.label8.Location = new System.Drawing.Point(365, 49);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(104, 14);
-            this.label8.TabIndex = 56;
+            this.label8.TabIndex = 63;
             this.label8.Text = "* nhập tên hoặc mã ";
             // 
             // btn_clear
@@ -148,7 +147,7 @@ namespace BTL_QLBQA.User_control
             this.btn_clear.Location = new System.Drawing.Point(596, 23);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(27, 23);
-            this.btn_clear.TabIndex = 54;
+            this.btn_clear.TabIndex = 61;
             this.btn_clear.Text = "X";
             this.btn_clear.UseVisualStyleBackColor = false;
             // 
@@ -160,7 +159,7 @@ namespace BTL_QLBQA.User_control
             this.txt_timkiem.Multiline = true;
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(255, 23);
-            this.txt_timkiem.TabIndex = 53;
+            this.txt_timkiem.TabIndex = 60;
             // 
             // btn_timkiem
             // 
@@ -172,7 +171,7 @@ namespace BTL_QLBQA.User_control
             this.btn_timkiem.Location = new System.Drawing.Point(629, 23);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(88, 25);
-            this.btn_timkiem.TabIndex = 55;
+            this.btn_timkiem.TabIndex = 62;
             this.btn_timkiem.Text = "Tìm kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = false;
             // 
@@ -181,9 +180,8 @@ namespace BTL_QLBQA.User_control
             this.gbForm.Controls.Add(this.label2);
             this.gbForm.Controls.Add(this.label9);
             this.gbForm.Controls.Add(this.btnCancel);
-            this.gbForm.Controls.Add(this.button1);
             this.gbForm.Controls.Add(this.btnSave);
-            this.gbForm.Controls.Add(this.txtAddress);
+            this.gbForm.Controls.Add(this.txtDescription);
             this.gbForm.Controls.Add(this.txtName);
             this.gbForm.Controls.Add(this.txtId);
             this.gbForm.Controls.Add(this.label1);
@@ -192,8 +190,18 @@ namespace BTL_QLBQA.User_control
             this.gbForm.Location = new System.Drawing.Point(1043, 67);
             this.gbForm.Name = "gbForm";
             this.gbForm.Size = new System.Drawing.Size(287, 391);
-            this.gbForm.TabIndex = 52;
+            this.gbForm.TabIndex = 59;
             this.gbForm.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(5, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Mô tả";
             // 
             // label9
             // 
@@ -201,9 +209,9 @@ namespace BTL_QLBQA.User_control
             this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(51, 15);
+            this.label9.Size = new System.Drawing.Size(83, 15);
             this.label9.TabIndex = 33;
-            this.label9.Text = "Tên kho";
+            this.label9.Text = "Loại sản phẩm";
             // 
             // btnCancel
             // 
@@ -235,6 +243,14 @@ namespace BTL_QLBQA.User_control
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // txtDescription
+            // 
+            this.txtDescription.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.Location = new System.Drawing.Point(97, 75);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(173, 21);
+            this.txtDescription.TabIndex = 25;
+            // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,54 +278,21 @@ namespace BTL_QLBQA.User_control
             this.label1.TabIndex = 21;
             this.label1.Text = "Mã";
             // 
-            // dgvWarehouse
+            // dgvCategory
             // 
-            this.dgvWarehouse.AllowUserToAddRows = false;
-            this.dgvWarehouse.AllowUserToDeleteRows = false;
-            this.dgvWarehouse.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvWarehouse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWarehouse.Location = new System.Drawing.Point(10, 67);
-            this.dgvWarehouse.Name = "dgvWarehouse";
-            this.dgvWarehouse.ReadOnly = true;
-            this.dgvWarehouse.RowHeadersVisible = false;
-            this.dgvWarehouse.Size = new System.Drawing.Size(1027, 599);
-            this.dgvWarehouse.TabIndex = 50;
-            this.dgvWarehouse.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWarehouse_CellClick);
+            this.dgvCategory.AllowUserToAddRows = false;
+            this.dgvCategory.AllowUserToDeleteRows = false;
+            this.dgvCategory.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategory.Location = new System.Drawing.Point(10, 67);
+            this.dgvCategory.Name = "dgvCategory";
+            this.dgvCategory.ReadOnly = true;
+            this.dgvCategory.RowHeadersVisible = false;
+            this.dgvCategory.Size = new System.Drawing.Size(1027, 599);
+            this.dgvCategory.TabIndex = 57;
+            this.dgvCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellClick);
             // 
-            // txtAddress
-            // 
-            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(97, 75);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(173, 21);
-            this.txtAddress.TabIndex = 25;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Địa chỉ kho";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(22, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 45);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Quản lý kho";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // uc_Warehouse
+            // uc_Category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -319,14 +302,14 @@ namespace BTL_QLBQA.User_control
             this.Controls.Add(this.txt_timkiem);
             this.Controls.Add(this.btn_timkiem);
             this.Controls.Add(this.gbForm);
-            this.Controls.Add(this.dgvWarehouse);
-            this.Name = "uc_Warehouse";
+            this.Controls.Add(this.dgvCategory);
+            this.Name = "uc_Category";
             this.Size = new System.Drawing.Size(1340, 689);
-            this.Load += new System.EventHandler(this.uc_Warehouse_Load);
+            this.Load += new System.EventHandler(this.uc_Category_Load);
             this.groupBox1.ResumeLayout(false);
             this.gbForm.ResumeLayout(false);
             this.gbForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWarehouse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,15 +327,14 @@ namespace BTL_QLBQA.User_control
         private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.GroupBox gbForm;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvWarehouse;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvCategory;
     }
 }

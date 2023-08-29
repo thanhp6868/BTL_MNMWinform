@@ -67,6 +67,7 @@
     <Compile Include="ConstLib\EnumExpiryContract.cs" />
     <Compile Include="ConstLib\EnumOrder.cs" />
     <Compile Include="DataAccess\QLBQA_dbContext.cs" />
+    <Compile Include="Dtos\Categories\CategoryDto.cs" />
     <Compile Include="Dtos\Customer\CustomerDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeSalaryDtos.cs" />
@@ -99,6 +100,12 @@
     <Compile Include="form\Form_main_menu.Designer.cs">
       <DependentUpon>Form_main_menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\FrmQuanLyKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\FrmQuanLyKho.Designer.cs">
+      <DependentUpon>FrmQuanLyKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mapper\MapperProfile.cs" />
     <Compile Include="Migrations\202308141539172_init.cs" />
     <Compile Include="Migrations\202308141539172_init.designer.cs">
@@ -123,6 +130,14 @@
     <Compile Include="Migrations\202308271630343_create_any_table.cs" />
     <Compile Include="Migrations\202308271630343_create_any_table.designer.cs">
       <DependentUpon>202308271630343_create_any_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281834121_add_column_address_WareHouse.cs" />
+    <Compile Include="Migrations\202308281834121_add_column_address_WareHouse.designer.cs">
+      <DependentUpon>202308281834121_add_column_address_WareHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308281846192_add_column_parentID_Category.cs" />
+    <Compile Include="Migrations\202308281846192_add_column_parentID_Category.designer.cs">
+      <DependentUpon>202308281846192_add_column_parentID_Category.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -157,6 +172,12 @@
     </Compile>
     <Compile Include="User_control\ShiftManagement.Designer.cs">
       <DependentUpon>ShiftManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_control\uc_Category.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_Category.Designer.cs">
+      <DependentUpon>uc_Category.cs</DependentUpon>
     </Compile>
     <Compile Include="User_control\uc_Donhang.cs">
       <SubType>UserControl</SubType>
@@ -248,6 +269,12 @@
     <EmbeddedResource Include="Migrations\202308271630343_create_any_table.resx">
       <DependentUpon>202308271630343_create_any_table.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281834121_add_column_address_WareHouse.resx">
+      <DependentUpon>202308281834121_add_column_address_WareHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308281846192_add_column_parentID_Category.resx">
+      <DependentUpon>202308281846192_add_column_parentID_Category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -260,6 +287,9 @@
     </Compile>
     <EmbeddedResource Include="User_control\ShiftManagement.resx">
       <DependentUpon>ShiftManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_Category.resx">
+      <DependentUpon>uc_Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_Donhang.resx">
       <DependentUpon>uc_Donhang.cs</DependentUpon>

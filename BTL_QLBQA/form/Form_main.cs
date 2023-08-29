@@ -105,6 +105,11 @@ namespace BTL_QLBQA.form
             else uc_Warehouse.Instance.BringToFront();
         }
 
+        private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         //private void btn_SanPham_Click(object sender, EventArgs e)
         //{

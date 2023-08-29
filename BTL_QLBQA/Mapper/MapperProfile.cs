@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BTL_QLBQA.Dtos.Categories;
 using BTL_QLBQA.Dtos.Customer;
 using BTL_QLBQA.Dtos.Employees;
 using BTL_QLBQA.Dtos.Products;
@@ -7,6 +8,7 @@ using BTL_QLBQA.Dtos.Suppliers;
 using BTL_QLBQA.Dtos.Warehouse;
 using BTL_QLBQA.Dtos.WarehouseAreas;
 using BTL_QLBQA.Models;
+using System.Drawing.Design;
 
 public class MappingProfile : Profile
 {
@@ -26,5 +28,6 @@ public class MappingProfile : Profile
         CreateMap<Customer, CustomerDto>();
         CreateMap<WareHouse, WarehouseDto>();
         CreateMap<WarehouseArea, WarehouseAreaDto>();
+        CreateMap<Category, CategoryDto>();
     }
 }
