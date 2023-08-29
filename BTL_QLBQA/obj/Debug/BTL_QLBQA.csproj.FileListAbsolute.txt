@@ -110,3 +110,12 @@ D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.add_column_address_WareHouse.resources
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.add_column_parentID_Category.resources
 D:\BTL\Mã nguồn mprư\BTL_QLBQA\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Category.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.create_any_table.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.add_column_address_WareHouse.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.ShiftManagement.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Category.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_DonVi.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_EmployeeSalary.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_Warehouse.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.User_control.uc_WarehouseArea.resources
+D:\Code\Private\C#\WINFORM\BTL_MNMWinform\BTL_QLBQA\obj\Debug\BTL_QLBQA.Migrations.add_column_parentID_Category.resources

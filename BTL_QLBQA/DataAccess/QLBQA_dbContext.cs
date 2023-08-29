@@ -10,6 +10,11 @@ namespace BTL_QLBQA.DataAccess
         {
 
         }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+           
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }

@@ -13,7 +13,7 @@ namespace BTL_QLBQA.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202308281846192_add_column_parentID_Category"; }
+            get { return "202308290747411_add_column_parentID_Category"; }
         }
         
         string IMigrationMetadata.Source

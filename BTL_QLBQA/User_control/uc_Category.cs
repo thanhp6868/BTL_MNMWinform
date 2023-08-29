@@ -106,7 +106,7 @@ namespace BTL_QLBQA.User_control
                 Category p = _categoryService.GetByID(CategoryID);
                 if (p != null)
                 {
-                    if (_categoryService.Delete(p.Id))
+                    if ( _categoryService.Delete(p.Id))
                     {
                         MessageBox.Show("Xóa thành công");
                         loadData();

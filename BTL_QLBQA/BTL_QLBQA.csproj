@@ -135,9 +135,9 @@
     <Compile Include="Migrations\202308281834121_add_column_address_WareHouse.designer.cs">
       <DependentUpon>202308281834121_add_column_address_WareHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202308281846192_add_column_parentID_Category.cs" />
-    <Compile Include="Migrations\202308281846192_add_column_parentID_Category.designer.cs">
-      <DependentUpon>202308281846192_add_column_parentID_Category.cs</DependentUpon>
+    <Compile Include="Migrations\202308290747411_add_column_parentID_Category.cs" />
+    <Compile Include="Migrations\202308290747411_add_column_parentID_Category.designer.cs">
+      <DependentUpon>202308290747411_add_column_parentID_Category.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -272,8 +272,8 @@
     <EmbeddedResource Include="Migrations\202308281834121_add_column_address_WareHouse.resx">
       <DependentUpon>202308281834121_add_column_address_WareHouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308281846192_add_column_parentID_Category.resx">
-      <DependentUpon>202308281846192_add_column_parentID_Category.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308290747411_add_column_parentID_Category.resx">
+      <DependentUpon>202308290747411_add_column_parentID_Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
