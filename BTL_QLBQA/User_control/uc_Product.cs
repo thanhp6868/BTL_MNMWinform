@@ -49,10 +49,10 @@ namespace BTL_QLBQA.User_control
         }
         public void loadData()
         {
-            dgvProduct.DataSource = _productSerivce.getDataSoucreDto(txt_timkiem.Text);
-            formHelper.comboBoxLoad<Supplier>(cbbSupplier, _supplierService.GetAll().ToList());
-            formHelper.comboBoxLoad<Unit>(cbbUnit, _unitService.GetAll().ToList());
-            formHelper.comboBoxLoad<ProductCategory>(cbbProductCategory, _productCategoryService.GetAll().ToList());
+            _productSerivce.loadData<ProductDto>(dgvProduct);
+            _supplierService.loadComboBox(cbbSupplier);
+            _unitService.loadComboBox(cbbUnit);
+            _productCategoryService.loadComboBox(cbbProductCategory);
             ProductId = 0;
             formHelper.loadGroupBox(gbForm);
         }

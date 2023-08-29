@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BTL_QLBQA.Components;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
@@ -9,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BTL_QLBQA.Services.BaseService
 {
-    public class BaseService<T> : IBaseService<T> where T : class, new()
+    public class BaseService<T> : IBaseService<T> where T : class, new() 
     {
         protected readonly BTL_QLBQA.DataAccess.QLBQA_dbContext dbContext;
         public BaseService()
@@ -47,11 +48,33 @@ namespace BTL_QLBQA.Services.BaseService
             return dbContext.Set<T>().Find(Id);
         }
 
+        public List<D> GetListDataSource<D>(string filter = "") where D : class
+        {
+            return GetAll().ToList<T>().Select(T => Program.mapper.Map<D>(T)).ToList();
+        }
+
         public T Insert(T entity)
         {
             dbContext.Set<T>().Add(entity);
             dbContext.SaveChanges();
             return entity;
+        }
+
+        public void loadComboBox(ComboBox b, string valueName = "Name")
+        {
+            try
+            {
+                formHelper.comboBoxLoad<T>(b, GetAll().ToList(), "Id", valueName);
+            }
+            catch
+            {
+                MessageBox.Show("Khởi tạo ComboBox " + b.Name + "thất bại");
+            }
+        }
+
+        public void loadData<D>(DataGridView d) where D : class
+        {
+            formHelper.loadDatagridView<D>(d, GetListDataSource<D>());
         }
 
         public T Update(T entity)

@@ -13,8 +13,8 @@ namespace BTL_QLBQA.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int? CategoryId { get; set; }
-        //[ForeignKey ("CategoryId")]
+        public int? ParentId { get; set; }
+        [ForeignKey ("ParentId")]
         public Category Parent { get; set; }
         public ICollection<Category> Children { get; set; }
     }

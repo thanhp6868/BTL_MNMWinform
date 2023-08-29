@@ -14,7 +14,7 @@ namespace BTL_QLBQA.Dtos.Categories
         [DisplayName("Loại sản phẩm")]
         public string Name { get; set; }
         [DisplayName("Mô tả")]
-        public float Description { get; set; }
+        public string Description { get; set; }
         //[DisplayName("Giờ kết thúc")]
         //public float EndHour { get; set; }
     }

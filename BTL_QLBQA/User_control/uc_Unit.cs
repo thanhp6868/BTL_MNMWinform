@@ -1,5 +1,5 @@
 ﻿using BTL_QLBQA.Components;
-using BTL_QLBQA.Dtos.Categories;
+using BTL_QLBQA.Dtos.Unit;
 using BTL_QLBQA.Models;
 using BTL_QLBQA.Services.BaseService;
 using System;
@@ -14,33 +14,35 @@ using System.Windows.Forms;
 
 namespace BTL_QLBQA.User_control
 {
-    public partial class uc_Category : UserControl
+    public partial class uc_Unit : UserControl
     {
-        private int CategoryID = 0;
-        private readonly IBaseService<ProductCategory> _categoryService;
-        public uc_Category()
+        private int UnitID = 0;
+        private readonly IBaseService<Unit> _unitService;
+        public uc_Unit()
         {
             InitializeComponent();
-            _categoryService = new BaseService<ProductCategory>();
+            _unitService = new BaseService<Unit>();
         }
-        private static uc_Category ucCategory;
-        public static uc_Category Instance
+        private static uc_Unit ucUnit;
+        public static uc_Unit Instance
         {
             get
             {
-                if (ucCategory == null)
-                    ucCategory = new uc_Category();
-                return ucCategory;
+                if (ucUnit == null)
+                    ucUnit = new uc_Unit();
+                return ucUnit;
             }
         }
 
-        private void uc_Category_Load(object sender, EventArgs e)
+        private void uc_Unit_Load(object sender, EventArgs e)
         {
             loadData();
         }
         public void loadData()
         {
-            dgvCategory.DataSource = _categoryService.GetAll().ToList().Select(s => Program.mapper.Map<ProductCategoryDto>(s)).ToList();
+            _unitService.loadData<UnitDto>(dgvUnit);
+            //dgvUnit.DataSource = _unitService.GetAll().ToList().Select(s => Program.mapper.Map<UnitDto>(s)).ToList();
+
 
         }
         public void setEnable(bool value)
@@ -53,7 +55,7 @@ namespace BTL_QLBQA.User_control
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            ProductCategory p = CategoryID > 0 ? _categoryService.GetByID(int.Parse(txtId.Text)) : new ProductCategory();
+            Unit p = UnitID > 0 ? _unitService.GetByID(int.Parse(txtId.Text)) : new Unit();
             if (p == null)
             {
                 MessageBox.Show("Thông tin không tồn tại");
@@ -61,14 +63,14 @@ namespace BTL_QLBQA.User_control
             }
             p.Name = txtName.Text;
             p.Description = txtDescription.Text;
-           
-            if (CategoryID > 0)
+
+            if (UnitID > 0)
             {
-                _categoryService.Update(p);
+                _unitService.Update(p);
             }
             else
             {
-                _categoryService.Insert(p);
+                _unitService.Insert(p);
             }
             loadData();
             setEnable(true);
@@ -82,14 +84,14 @@ namespace BTL_QLBQA.User_control
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            CategoryID = 0;
+            UnitID = 0;
             formHelper.loadGroupBox(gbForm);
             setEnable(false);
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            if (CategoryID > 0)
+            if (UnitID > 0)
             {
                 setEnable(false);
             }
@@ -101,12 +103,13 @@ namespace BTL_QLBQA.User_control
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            if (CategoryID > 0)
+
+            if (UnitID > 0)
             {
-                Category p = _categoryService.GetByID(CategoryID);
+                Unit p = _unitService.GetByID(UnitID);
                 if (p != null)
                 {
-                    if ( _categoryService.Delete(p.Id))
+                    if (_unitService.Delete(p.Id))
                     {
                         MessageBox.Show("Xóa thành công");
                         loadData();
@@ -128,18 +131,19 @@ namespace BTL_QLBQA.User_control
             loadData();
         }
 
-        private void dgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvUnit_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.ColumnIndex >= 0 && !gbForm.Enabled)
             {
-                var p = _categoryService.GetByID(int.Parse(dgvCategory.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                var p = _unitService.GetByID(int.Parse(dgvUnit.Rows[e.RowIndex].Cells[0].Value.ToString()));
                 if (p != null)
                 {
-                    CategoryID = p.Id;
+                    UnitID = p.Id;
                     txtId.Text = p.Id.ToString();
                     txtName.Text = p.Name.ToString();
                     txtDescription.Text = p.Description;
-                    
+
                 }
             }
         }

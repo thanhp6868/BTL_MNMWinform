@@ -105,6 +105,7 @@ namespace BTL_QLBQA.form
             this.đơnVịSảnPhẩmToolStripMenuItem.Name = "đơnVịSảnPhẩmToolStripMenuItem";
             this.đơnVịSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.đơnVịSảnPhẩmToolStripMenuItem.Text = "Đơn vị sản phẩm";
+            this.đơnVịSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.đơnVịSảnPhẩmToolStripMenuItem_Click);
             // 
             // sảnPhẩmToolStripMenuItem2
             // 
@@ -220,9 +221,6 @@ namespace BTL_QLBQA.form
         private System.Windows.Forms.Panel pMain;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem loạiSảnPhẩmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đơnVịSảnPhẩmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem nhàCungCấpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
@@ -235,5 +233,8 @@ namespace BTL_QLBQA.form
         private System.Windows.Forms.ToolStripMenuItem bánHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem khoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem khuVựcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem loạiSảnPhẩmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đơnVịSảnPhẩmToolStripMenuItem;
     }
 }

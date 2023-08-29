@@ -5,6 +5,7 @@ using BTL_QLBQA.Dtos.Employees;
 using BTL_QLBQA.Dtos.Products;
 using BTL_QLBQA.Dtos.Shifts;
 using BTL_QLBQA.Dtos.Suppliers;
+using BTL_QLBQA.Dtos.Unit;
 using BTL_QLBQA.Dtos.Warehouse;
 using BTL_QLBQA.Dtos.WarehouseAreas;
 using BTL_QLBQA.Models;
@@ -29,5 +30,7 @@ public class MappingProfile : Profile
         CreateMap<WareHouse, WarehouseDto>();
         CreateMap<WarehouseArea, WarehouseAreaDto>();
         CreateMap<Category, CategoryDto>();
+        CreateMap<Unit, UnitDto>();
+        CreateMap<ProductCategory, ProductCategoryDto>();
     }
 }

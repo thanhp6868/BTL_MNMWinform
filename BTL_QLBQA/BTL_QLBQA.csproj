@@ -68,12 +68,14 @@
     <Compile Include="ConstLib\EnumOrder.cs" />
     <Compile Include="DataAccess\QLBQA_dbContext.cs" />
     <Compile Include="Dtos\Categories\CategoryDto.cs" />
+    <Compile Include="Dtos\Categories\ProductCategoryDto.cs" />
     <Compile Include="Dtos\Customer\CustomerDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeSalaryDtos.cs" />
     <Compile Include="Dtos\Products\ProductDto.cs" />
     <Compile Include="Dtos\Shifts\ShiftDto.cs" />
     <Compile Include="Dtos\Suppliers\SupplierDto.cs" />
+    <Compile Include="Dtos\Unit\UnitDto.cs" />
     <Compile Include="Dtos\WarehouseAreas\WarehouseAreaDto.cs" />
     <Compile Include="Dtos\Warehouses\WarehouseDto.cs" />
     <Compile Include="form\Form_BanHang.cs">
@@ -138,6 +140,14 @@
     <Compile Include="Migrations\202308290747411_add_column_parentID_Category.cs" />
     <Compile Include="Migrations\202308290747411_add_column_parentID_Category.designer.cs">
       <DependentUpon>202308290747411_add_column_parentID_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308291037124_rename_column.cs" />
+    <Compile Include="Migrations\202308291037124_rename_column.designer.cs">
+      <DependentUpon>202308291037124_rename_column.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308291128031_add_column_employeeId.cs" />
+    <Compile Include="Migrations\202308291128031_add_column_employeeId.designer.cs">
+      <DependentUpon>202308291128031_add_column_employeeId.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -227,6 +237,12 @@
     <Compile Include="User_control\uc_Product.Designer.cs">
       <DependentUpon>uc_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_control\uc_Unit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_control\uc_Unit.Designer.cs">
+      <DependentUpon>uc_Unit.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_control\uc_Warehouse.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +291,12 @@
     <EmbeddedResource Include="Migrations\202308290747411_add_column_parentID_Category.resx">
       <DependentUpon>202308290747411_add_column_parentID_Category.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308291037124_rename_column.resx">
+      <DependentUpon>202308291037124_rename_column.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308291128031_add_column_employeeId.resx">
+      <DependentUpon>202308291128031_add_column_employeeId.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -314,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_Product.resx">
       <DependentUpon>uc_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_control\uc_Unit.resx">
+      <DependentUpon>uc_Unit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_control\uc_Warehouse.resx">
       <DependentUpon>uc_Warehouse.cs</DependentUpon>

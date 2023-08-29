@@ -49,8 +49,7 @@ namespace BTL_QLBQA.User_control
         }
         public void loadData()
         {
-            dgvSuppiler.DataSource = _supplierService.GetAll().ToList().Select(s => Program.mapper.Map<SupplierDto>(s)).ToList();
-            
+            formHelper.loadDatagridView(dgvSuppiler, _supplierService.GetListDataSource<SupplierDto>());
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -93,10 +92,10 @@ namespace BTL_QLBQA.User_control
                 {
                     SupplierID = p.Id;
                     txtMaNCC.Text = p.Id.ToString();
-                    txtTenNCC.Text = p.Name.ToString();
-                    txtDiaChi.Text = p.Address.ToString();
-                    txtSDT.Text = p.PhoneNumber.ToString();
-                    txtEmail.Text = p.Email.ToString();
+                    txtTenNCC.Text = p.Name;
+                    txtDiaChi.Text = p.Address;
+                    txtSDT.Text = p.PhoneNumber;
+                    txtEmail.Text = p.Email;
                 }
             }
         }

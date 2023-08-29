@@ -107,8 +107,26 @@ namespace BTL_QLBQA.form
 
         private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (!pMain.Controls.Contains(uc_Category.Instance))
+            {
+                pMain.Controls.Add(uc_Category.Instance);
+                uc_Category.Instance.Dock = DockStyle.Fill;
+                uc_Category.Instance.BringToFront();
+            }
+            else uc_Category.Instance.BringToFront();
         }
+
+        private void đơnVịSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!pMain.Controls.Contains(uc_Unit.Instance))
+            {
+                pMain.Controls.Add(uc_Unit.Instance);
+                uc_Unit.Instance.Dock = DockStyle.Fill;
+                uc_Unit.Instance.BringToFront();
+            }
+            else uc_Unit.Instance.BringToFront();
+        }
+
 
 
         //private void btn_SanPham_Click(object sender, EventArgs e)

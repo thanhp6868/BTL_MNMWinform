@@ -43,7 +43,7 @@ namespace BTL_QLBQA.User_control
         }
         public void loadData()
         {
-            dgvShift.DataSource = _shiftService.GetAll().ToList().Select(s=>Program.mapper.Map<ShiftDto>(s)).ToList();
+            formHelper.loadDatagridView(dgvShift, _shiftService.GetListDataSource<ShiftDto>());
         }
         public void setEnable(bool value)
         {
