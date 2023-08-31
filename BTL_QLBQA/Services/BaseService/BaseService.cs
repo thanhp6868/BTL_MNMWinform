@@ -74,7 +74,12 @@ namespace BTL_QLBQA.Services.BaseService
 
         public void loadData<D>(DataGridView d) where D : class
         {
-            formHelper.loadDatagridView<D>(d, GetListDataSource<D>());
+            setDataGridView<D>(d, GetListDataSource<D>());
+        }
+
+        public void setDataGridView<D>(DataGridView d, List<D> dataSource) where D : class
+        {
+            formHelper.loadDatagridView<D>(d, dataSource);
         }
 
         public T Update(T entity)

@@ -21,10 +21,24 @@ namespace BTL_QLBQA.Services.ProductService
                .Select(p => Program.mapper.Map<ProductDto>(p))
                .ToList();
         }
+
+
+        public void getProductByCategory(DataGridView d, int CategoryID = 0, string CategoryName = "")
+        {
+            var list = GetAll()
+               .Include(p => p.ProductCategory)
+               .Where(p => (CategoryName == "" || p.Name.ToLower().Contains(CategoryName.ToLower())) && (CategoryID == 0 || p.Id == CategoryID))
+               .ToList()
+               .Select(p => Program.mapper.Map<ProductDto>(p))
+               .ToList();
+            setDataGridView<ProductDto>(d, list);
+        }
+
         public override void loadComboBox(ComboBox b, string valueName = "Name")
         {
             base.loadComboBox(b, valueName);
             b.SelectedIndex = -1;
         }
+
     }
 }

@@ -72,6 +72,8 @@
     <Compile Include="Dtos\Customer\CustomerDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeDto.cs" />
     <Compile Include="Dtos\Employees\EmployeeSalaryDtos.cs" />
+    <Compile Include="Dtos\OrderDetail\OrderDetailDto.cs" />
+    <Compile Include="Dtos\Order\OrderDto.cs" />
     <Compile Include="Dtos\Products\ProductDto.cs" />
     <Compile Include="Dtos\Shifts\ShiftDto.cs" />
     <Compile Include="Dtos\Suppliers\SupplierDto.cs" />

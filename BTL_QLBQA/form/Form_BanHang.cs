@@ -1,4 +1,5 @@
 ﻿using BTL_QLBQA.Components;
+using BTL_QLBQA.Dtos.OrderDetail;
 using BTL_QLBQA.Models;
 using BTL_QLBQA.Services.BaseService;
 using BTL_QLBQA.Services.OrdersService;
@@ -48,7 +49,7 @@ namespace BTL_QLBQA.form
             _orderService.loadComboBox(cbxMaHoaDon, "Code");
             _employeeService.loadComboBox(cbxTenNV, "FullName");
             _customerService.loadComboBox(cbxTenKH, "FullName");
-            _productService.loadComboBox(cbxTenHang);
+            //_productService.loadComboBox(cbxTenHang);
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -100,6 +101,49 @@ namespace BTL_QLBQA.form
         {
 
         }
+        private void setDataCustomer()
+        {
+            
+            if (cbxTenKH.SelectedIndex >= 0)
+            {
+                if (cbxTenKH.SelectedValue is null) return;
+                var dataCustomer = cbxTenKH.SelectedValue;
+                int value = 0;
+                if (dataCustomer.GetType() == typeof(Customer))
+                {
+                    value = (dataCustomer as Customer).Id;
+                }
+                else
+                {
+                    value = (int)dataCustomer;
+                }
+                txtMaKH.Text = value.ToString();
+                var KhachHang = _customerService.GetByID(value);
+                txtDiaChi.Text = KhachHang.Address;
+                txtSDT.Text = KhachHang.PhoneNumber;
+            }
+
+        }
+        private void setDataEmployee()
+        {
+            if (cbxTenKH.SelectedIndex >= 0)
+            {
+                if (cbxTenNV.SelectedValue is null) return;
+                int value = 0;
+                var dataEmployee = cbxTenNV.SelectedValue;
+                if (cbxTenNV.GetType() == typeof(Employee))
+                {
+                    value = (dataEmployee as Employee).Id;
+                }
+                else
+                {
+                    value = (int)dataEmployee;
+                }
+                txtMaNV.Text = value.ToString();
+            }
+            
+           
+        }
         private void setOrderData(Order order)
         {
             if(order == null)
@@ -110,12 +154,15 @@ namespace BTL_QLBQA.form
             OrderIdCurrent = order.Id;
             txtMaHoaDon.Text = order.Code;
             dateNgayvaGioban.Value = order.CreatedAt;
+            setDataEmployee();
+            setDataCustomer();
             if (!(order.OrderDetails is null))
                 loadOrderDetail(order);
         }
         public void loadOrderDetail(Order order)
         {
-            dataGridView1.DataSource = order.OrderDetails.ToList();
+            formHelper.loadDatagridView(dataGridView1, _orderDetailService.GetListDataSource<OrderDetailDto>());
+            //dataGridView1.DataSource = order.OrderDetails.ToList();
         }
         private void cbxTenHang_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -128,9 +175,10 @@ namespace BTL_QLBQA.form
         }
         private void loadProduct()
         {
-            if (cbxTenHang.SelectedIndex > 0)
+            if (txtMaHang.Text != "")
             {
-                Product product = _productService.GetByID((int)cbxTenHang.SelectedValue);
+                int result = int.Parse(txtMaHang.Text);
+                Product product = _productService.GetByID((int)int.Parse(txtMaHang.Text));
                 if (product is null)
                 {
                     MessageBox.Show("Sản phẩm không tồn tại", "Thông báo");
@@ -141,7 +189,7 @@ namespace BTL_QLBQA.form
                     MessageBox.Show("Sản phẩm đã hết hàng", "Thông báo");
                     return;
                 }
-                txtMaHang.Text = product.Id.ToString();
+                txtTenHang.Text = product.Name.ToString();
                 txtDonGia.Text = product.ExportPrice.ToString();
                 float total = product.ExportPrice * (int)numUDSoLuong.Value;
                 txtThanhTien.Text = (total - total / 100 * (int)numericUpDown1.Value).ToString();
@@ -176,9 +224,9 @@ namespace BTL_QLBQA.form
         }
         private OrderDetail removeDetail()
         {
-            OrderDetail orderDetail = OrderCurrent.OrderDetails.Where(od => od.ProductId == (int)cbxTenHang.SelectedValue).FirstOrDefault() ?? new OrderDetail()
+            OrderDetail orderDetail = OrderCurrent.OrderDetails.Where(od => od.ProductId == (int)int.Parse(txtMaHang.Text)).FirstOrDefault() ?? new OrderDetail()
             {
-                ProductId = (int)cbxTenHang.SelectedValue,
+                ProductId = (int)int.Parse(txtMaHang.Text),
             };
             OrderCurrent.OrderDetails.Remove(orderDetail);
             return orderDetail;
@@ -190,6 +238,39 @@ namespace BTL_QLBQA.form
             OrderCurrent.CustomerId = (int)cbxTenKH.SelectedValue;
             _orderService.Insert(OrderCurrent);
             _orderService.setDraftOrder(OrderCurrent);
+        }
+
+        private void cbxTenKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            setDataCustomer();
+        }
+
+        private void cbxTenNV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            setDataEmployee();
+        }
+
+        private void txtMaHang_TextChanged(object sender, EventArgs e)
+        {
+            
+                // Xử lý khi người dùng ấn nút Enter
+                // ...
+        }
+           
+
+        private void txtMaHang_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtMaHang_Leave(object sender, EventArgs e)
+        {
+            loadProduct();
         }
     }
 }

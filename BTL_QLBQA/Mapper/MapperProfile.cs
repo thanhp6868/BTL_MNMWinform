@@ -2,6 +2,8 @@
 using BTL_QLBQA.Dtos.Categories;
 using BTL_QLBQA.Dtos.Customer;
 using BTL_QLBQA.Dtos.Employees;
+using BTL_QLBQA.Dtos.Order;
+using BTL_QLBQA.Dtos.OrderDetail;
 using BTL_QLBQA.Dtos.Products;
 using BTL_QLBQA.Dtos.Shifts;
 using BTL_QLBQA.Dtos.Suppliers;
@@ -32,5 +34,7 @@ public class MappingProfile : Profile
         CreateMap<Category, CategoryDto>();
         CreateMap<Unit, UnitDto>();
         CreateMap<ProductCategory, ProductCategoryDto>();
+        CreateMap<Order, OrderDto>();
+        CreateMap<OrderDetail, OrderDetailDto>();
     }
 }

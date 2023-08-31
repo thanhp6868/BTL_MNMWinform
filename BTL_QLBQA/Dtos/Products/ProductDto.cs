@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BTL_QLBQA.Dtos.Categories;
 
 namespace BTL_QLBQA.Dtos.Products
 {

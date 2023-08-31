@@ -29,6 +29,7 @@ namespace BTL_QLBQA.form
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main_menu));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -77,11 +78,12 @@ namespace BTL_QLBQA.form
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(576, 255);
             this.MinimumSize = new System.Drawing.Size(576, 255);
             this.Name = "Form_main_menu";
-            this.Text = "Form_main_menu";
+            this.Text = "Chọn tác vụ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_main_menu_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

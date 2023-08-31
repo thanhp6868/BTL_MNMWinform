@@ -29,6 +29,7 @@ namespace BTL_QLBQA.form
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_BanHang));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateNgayvaGioban = new System.Windows.Forms.DateTimePicker();
@@ -48,11 +49,12 @@ namespace BTL_QLBQA.form
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.numUDSoLuong = new System.Windows.Forms.NumericUpDown();
             this.txtTong = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.cbxTenHang = new System.Windows.Forms.ComboBox();
-            this.txtMaHang = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
@@ -61,8 +63,8 @@ namespace BTL_QLBQA.form
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.cbxMaHoaDon = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -71,16 +73,15 @@ namespace BTL_QLBQA.form
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtTenHang = new System.Windows.Forms.TextBox();
+            this.txtMaHang = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDSoLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -139,6 +140,7 @@ namespace BTL_QLBQA.form
             this.cbxTenNV.Name = "cbxTenNV";
             this.cbxTenNV.Size = new System.Drawing.Size(307, 29);
             this.cbxTenNV.TabIndex = 17;
+            this.cbxTenNV.SelectedIndexChanged += new System.EventHandler(this.cbxTenNV_SelectedIndexChanged);
             // 
             // cbxTenKH
             // 
@@ -147,6 +149,7 @@ namespace BTL_QLBQA.form
             this.cbxTenKH.Name = "cbxTenKH";
             this.cbxTenKH.Size = new System.Drawing.Size(307, 29);
             this.cbxTenKH.TabIndex = 16;
+            this.cbxTenKH.SelectedIndexChanged += new System.EventHandler(this.cbxTenKH_SelectedIndexChanged);
             // 
             // txtSDT
             // 
@@ -276,14 +279,15 @@ namespace BTL_QLBQA.form
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtMaHang);
+            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button8);
             this.groupBox2.Controls.Add(this.numUDSoLuong);
             this.groupBox2.Controls.Add(this.txtTong);
             this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.cbxTenHang);
-            this.groupBox2.Controls.Add(this.txtMaHang);
+            this.groupBox2.Controls.Add(this.txtTenHang);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.txtThanhTien);
@@ -292,7 +296,6 @@ namespace BTL_QLBQA.form
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(34, 448);
             this.groupBox2.Name = "groupBox2";
@@ -301,10 +304,41 @@ namespace BTL_QLBQA.form
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(429, 92);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(183, 29);
+            this.numericUpDown1.TabIndex = 52;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(947, 74);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(162, 53);
+            this.button7.TabIndex = 50;
+            this.button7.Text = "Xoá";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(947, 20);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(162, 51);
+            this.button8.TabIndex = 51;
+            this.button8.Text = "Cập nhật";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // numUDSoLuong
             // 
             this.numUDSoLuong.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numUDSoLuong.Location = new System.Drawing.Point(123, 107);
+            this.numUDSoLuong.Location = new System.Drawing.Point(123, 95);
             this.numUDSoLuong.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -344,29 +378,11 @@ namespace BTL_QLBQA.form
             this.label16.TabIndex = 32;
             this.label16.Text = "Tổng";
             // 
-            // cbxTenHang
-            // 
-            this.cbxTenHang.FormattingEnabled = true;
-            this.cbxTenHang.Location = new System.Drawing.Point(123, 58);
-            this.cbxTenHang.Name = "cbxTenHang";
-            this.cbxTenHang.Size = new System.Drawing.Size(183, 29);
-            this.cbxTenHang.TabIndex = 31;
-            this.cbxTenHang.SelectedIndexChanged += new System.EventHandler(this.cbxTenHang_SelectedIndexChanged);
-            // 
-            // txtMaHang
-            // 
-            this.txtMaHang.Location = new System.Drawing.Point(429, 55);
-            this.txtMaHang.Multiline = true;
-            this.txtMaHang.Name = "txtMaHang";
-            this.txtMaHang.ReadOnly = true;
-            this.txtMaHang.Size = new System.Drawing.Size(183, 33);
-            this.txtMaHang.TabIndex = 29;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(333, 106);
+            this.label14.Location = new System.Drawing.Point(333, 94);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 21);
             this.label14.TabIndex = 28;
@@ -376,7 +392,7 @@ namespace BTL_QLBQA.form
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(333, 58);
+            this.label15.Location = new System.Drawing.Point(27, 49);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(74, 21);
             this.label15.TabIndex = 27;
@@ -384,7 +400,7 @@ namespace BTL_QLBQA.form
             // 
             // txtThanhTien
             // 
-            this.txtThanhTien.Location = new System.Drawing.Point(726, 106);
+            this.txtThanhTien.Location = new System.Drawing.Point(726, 94);
             this.txtThanhTien.Multiline = true;
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.ReadOnly = true;
@@ -393,7 +409,7 @@ namespace BTL_QLBQA.form
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(726, 58);
+            this.txtDonGia.Location = new System.Drawing.Point(726, 46);
             this.txtDonGia.Multiline = true;
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.ReadOnly = true;
@@ -404,7 +420,7 @@ namespace BTL_QLBQA.form
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(630, 109);
+            this.label12.Location = new System.Drawing.Point(630, 97);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 21);
             this.label12.TabIndex = 24;
@@ -414,7 +430,7 @@ namespace BTL_QLBQA.form
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(630, 61);
+            this.label13.Location = new System.Drawing.Point(630, 49);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(69, 21);
             this.label13.TabIndex = 23;
@@ -424,30 +440,20 @@ namespace BTL_QLBQA.form
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 166);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 133);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1103, 221);
+            this.dataGridView1.Size = new System.Drawing.Size(1103, 254);
             this.dataGridView1.TabIndex = 0;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(27, 106);
+            this.label10.Location = new System.Drawing.Point(27, 94);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(78, 21);
             this.label10.TabIndex = 20;
             this.label10.Text = "Số lượng";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(27, 58);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 21);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Tên hàng";
             // 
             // groupBox3
             // 
@@ -465,6 +471,17 @@ namespace BTL_QLBQA.form
             this.groupBox3.Size = new System.Drawing.Size(1115, 149);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(460, 75);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(162, 53);
+            this.button6.TabIndex = 49;
+            this.button6.Text = "Hoàn tất đơn hàng";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // cbxMaHoaDon
             // 
@@ -546,47 +563,37 @@ namespace BTL_QLBQA.form
             this.label18.TabIndex = 47;
             this.label18.Text = "HOÁ ĐƠN BÁN HÀNG";
             // 
-            // button6
+            // label11
             // 
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(460, 75);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(162, 53);
-            this.button6.TabIndex = 49;
-            this.button6.Text = "Hoàn tất đơn hàng";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(333, 50);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 21);
+            this.label11.TabIndex = 53;
+            this.label11.Text = "Tên hàng";
             // 
-            // button7
+            // txtTenHang
             // 
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(932, 86);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(162, 53);
-            this.button7.TabIndex = 50;
-            this.button7.Text = "Xoá";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.txtTenHang.Enabled = false;
+            this.txtTenHang.Location = new System.Drawing.Point(429, 46);
+            this.txtTenHang.Multiline = true;
+            this.txtTenHang.Name = "txtTenHang";
+            this.txtTenHang.ReadOnly = true;
+            this.txtTenHang.Size = new System.Drawing.Size(183, 33);
+            this.txtTenHang.TabIndex = 29;
+            this.txtTenHang.TextChanged += new System.EventHandler(this.txtMaHang_TextChanged);
+            this.txtTenHang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaHang_KeyPress);
             // 
-            // button8
+            // txtMaHang
             // 
-            this.button8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(932, 26);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(162, 53);
-            this.button8.TabIndex = 51;
-            this.button8.Text = "Cập nhật";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(429, 104);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(183, 29);
-            this.numericUpDown1.TabIndex = 52;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.txtMaHang.Location = new System.Drawing.Point(123, 46);
+            this.txtMaHang.Multiline = true;
+            this.txtMaHang.Name = "txtMaHang";
+            this.txtMaHang.Size = new System.Drawing.Size(183, 33);
+            this.txtMaHang.TabIndex = 54;
+            this.txtMaHang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaHang_KeyPress);
+            this.txtMaHang.Leave += new System.EventHandler(this.txtMaHang_Leave);
             // 
             // Form_BanHang
             // 
@@ -597,6 +604,7 @@ namespace BTL_QLBQA.form
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_BanHang";
             this.Text = "Tạo hoá đơn bán hàng";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_BanHang_FormClosed);
@@ -605,11 +613,11 @@ namespace BTL_QLBQA.form
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDSoLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -638,8 +646,6 @@ namespace BTL_QLBQA.form
         private System.Windows.Forms.ComboBox cbxTenKH;
         private System.Windows.Forms.TextBox txtTong;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox cbxTenHang;
-        private System.Windows.Forms.TextBox txtMaHang;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtThanhTien;
@@ -648,7 +654,6 @@ namespace BTL_QLBQA.form
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numUDSoLuong;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cbxMaHoaDon;
@@ -663,5 +668,8 @@ namespace BTL_QLBQA.form
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtTenHang;
+        private System.Windows.Forms.TextBox txtMaHang;
     }
 }

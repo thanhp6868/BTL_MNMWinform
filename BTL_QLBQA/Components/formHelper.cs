@@ -47,6 +47,7 @@ namespace BTL_QLBQA.Components
         public static void loadDatagridView<T>(DataGridView d, List<T> dataList) where T : class
         {
             d.DataSource = dataList;
+
             d.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
     }

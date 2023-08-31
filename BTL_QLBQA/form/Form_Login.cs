@@ -43,5 +43,19 @@ namespace BTL_QLBQA
                 MessageBox.Show("Thong tin tai khoan hoac mat khau deo dung, thu lai!", "Thong bao");
             }
         }
+
+        private void ck_showpass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ck_showpass.Checked)
+            {
+                txt_password.UseSystemPasswordChar = true;
+            }
+            else txt_password.UseSystemPasswordChar = false;
+        }
+
+        private void Form_Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -45,14 +45,18 @@ namespace BTL_QLBQA.User_control
 
         private void uc_Product_Load(object sender, EventArgs e)
         {
+            
             loadData();
         }
-        public void loadData()
+        public void loadData(bool isSearch= false)
         {
-            _productSerivce.loadData<ProductDto>(dgvProduct);
+            if(!isSearch) _productCategoryService.loadComboBox(cbbProductCategory2);
             _supplierService.loadComboBox(cbbSupplier);
             _unitService.loadComboBox(cbbUnit);
             _productCategoryService.loadComboBox(cbbProductCategory);
+
+            _productSerivce.getProductByCategory(dgvProduct, isSearch ? (int)cbbProductCategory2.SelectedValue : 0) ;
+
             ProductId = 0;
             formHelper.loadGroupBox(gbForm);
         }
@@ -171,13 +175,9 @@ namespace BTL_QLBQA.User_control
 
         private void btn_timkiem_Click(object sender, EventArgs e)
         {
-            loadData();
+            loadData(true);
         }
 
-        private void btn_clear_Click(object sender, EventArgs e)
-        {
-            txt_timkiem.Text = "";
-            loadData();
-        }
+       
     }
 }

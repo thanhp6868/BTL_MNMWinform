@@ -29,6 +29,7 @@ namespace BTL_QLBQA.form
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.pMain = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.sảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,7 +68,7 @@ namespace BTL_QLBQA.form
             this.bánHàngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1343, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1343, 25);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -80,8 +81,9 @@ namespace BTL_QLBQA.form
             this.nhânViênToolStripMenuItem,
             this.khoToolStripMenuItem,
             this.khoToolStripMenuItem1});
+            this.sảnPhẩmToolStripMenuItem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(70, 21);
             this.sảnPhẩmToolStripMenuItem.Text = "Quản lý";
             // 
             // sảnPhẩmToolStripMenuItem1
@@ -96,14 +98,14 @@ namespace BTL_QLBQA.form
             // loạiSảnPhẩmToolStripMenuItem
             // 
             this.loạiSảnPhẩmToolStripMenuItem.Name = "loạiSảnPhẩmToolStripMenuItem";
-            this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loạiSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.loạiSảnPhẩmToolStripMenuItem.Text = "Loại sản phẩm";
             this.loạiSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.loạiSảnPhẩmToolStripMenuItem_Click);
             // 
             // đơnVịSảnPhẩmToolStripMenuItem
             // 
             this.đơnVịSảnPhẩmToolStripMenuItem.Name = "đơnVịSảnPhẩmToolStripMenuItem";
-            this.đơnVịSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đơnVịSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.đơnVịSảnPhẩmToolStripMenuItem.Text = "Đơn vị sản phẩm";
             this.đơnVịSảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.đơnVịSảnPhẩmToolStripMenuItem_Click);
             // 
@@ -135,28 +137,28 @@ namespace BTL_QLBQA.form
             // quảnLýNhânViênToolStripMenuItem
             // 
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
-            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
             this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
             // lươngNhânViênToolStripMenuItem
             // 
             this.lươngNhânViênToolStripMenuItem.Name = "lươngNhânViênToolStripMenuItem";
-            this.lươngNhânViênToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.lươngNhânViênToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.lươngNhânViênToolStripMenuItem.Text = "Lương nhân viên";
             this.lươngNhânViênToolStripMenuItem.Click += new System.EventHandler(this.lươngNhânViênToolStripMenuItem_Click);
             // 
             // caLàmToolStripMenuItem
             // 
             this.caLàmToolStripMenuItem.Name = "caLàmToolStripMenuItem";
-            this.caLàmToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.caLàmToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.caLàmToolStripMenuItem.Text = "Ca làm";
             this.caLàmToolStripMenuItem.Click += new System.EventHandler(this.caLàmToolStripMenuItem_Click);
             // 
             // hợpĐồngToolStripMenuItem
             // 
             this.hợpĐồngToolStripMenuItem.Name = "hợpĐồngToolStripMenuItem";
-            this.hợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.hợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.hợpĐồngToolStripMenuItem.Text = "Hợp đồng";
             // 
             // khoToolStripMenuItem
@@ -179,20 +181,21 @@ namespace BTL_QLBQA.form
             // khoToolStripMenuItem2
             // 
             this.khoToolStripMenuItem2.Name = "khoToolStripMenuItem2";
-            this.khoToolStripMenuItem2.Size = new System.Drawing.Size(117, 22);
+            this.khoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.khoToolStripMenuItem2.Text = "Kho";
             this.khoToolStripMenuItem2.Click += new System.EventHandler(this.khoToolStripMenuItem2_Click);
             // 
             // khuVựcToolStripMenuItem
             // 
             this.khuVựcToolStripMenuItem.Name = "khuVựcToolStripMenuItem";
-            this.khuVựcToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.khuVựcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.khuVựcToolStripMenuItem.Text = "Khu vực";
             // 
             // bánHàngToolStripMenuItem
             // 
+            this.bánHàngToolStripMenuItem.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
-            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(82, 21);
             this.bánHàngToolStripMenuItem.Text = "Bán hàng";
             this.bánHàngToolStripMenuItem.Click += new System.EventHandler(this.bánHàngToolStripMenuItem_Click);
             // 
@@ -203,12 +206,15 @@ namespace BTL_QLBQA.form
             this.ClientSize = new System.Drawing.Size(1343, 720);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pMain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1359, 759);
             this.MinimumSize = new System.Drawing.Size(1359, 759);
             this.Name = "Form_main";
-            this.Text = "Form_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản lý cửa hàng";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_main_FormClosed);
             this.Load += new System.EventHandler(this.Form_main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

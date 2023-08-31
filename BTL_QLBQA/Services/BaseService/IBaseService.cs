@@ -18,5 +18,6 @@ namespace BTL_QLBQA.Services.BaseService
         List<D> GetListDataSource<D>(string filter = "") where D : class;
         void loadData<D>(DataGridView d) where D : class;
         void loadComboBox(ComboBox b,string valueName = "Name");
+        void setDataGridView<D>(DataGridView d, List<D> dataSource) where D : class;
     }
 }

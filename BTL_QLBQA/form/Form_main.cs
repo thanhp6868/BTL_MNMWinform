@@ -127,6 +127,12 @@ namespace BTL_QLBQA.form
             else uc_Unit.Instance.BringToFront();
         }
 
+        private void Form_main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form_main_menu form = new Form_main_menu();
+            form.Show();
+        }
+
 
 
         //private void btn_SanPham_Click(object sender, EventArgs e)
