@@ -27,7 +27,7 @@ namespace BTL_QLBQA.Services.ProductService
         {
             var list = GetAll()
                .Include(p => p.ProductCategory)
-               .Where(p =>   (CategoryID == 0 || p.ProductCategory.Id == CategoryID))
+               .Where(p => (CategoryName == "" || p.Name.ToLower().Contains(CategoryName.ToLower())) && (CategoryID == 0 || p.Id == CategoryID))
                .ToList()
                .Select(p => Program.mapper.Map<ProductDto>(p))
                .ToList();
